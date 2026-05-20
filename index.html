@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ─────────── SEO essentials ─────────── -->
+<title>Solfège &amp; Harmonie — Théorie musicale en français</title>
+<meta name="description" content="Apprenez la théorie musicale en français : leçons illustrées, exercices interactifs et outils (piano virtuel, gammes, intervalles). Avec les noms français des notes — do, ré, mi, fa, sol, la, si.">
+<meta name="keywords" content="solfège, théorie musicale, leçons musique, exercices solfège, piano virtuel, gamme majeure, intervalles musique, armures, clé de sol, clé de fa, do ré mi fa sol la si, apprendre la musique, cours de solfège gratuit">
+<meta name="author" content="Solfège &amp; Harmonie">
+<meta name="robots" content="index, follow">
+<meta name="language" content="French">
+<link rel="canonical" href="https://VOTRE-DOMAINE.example/">
+
+<!-- ─────────── Open Graph (Facebook, LinkedIn, WhatsApp, Messenger…) ─────────── -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Solfège &amp; Harmonie">
+<meta property="og:title" content="Solfège &amp; Harmonie — Théorie musicale en français">
+<meta property="og:description" content="Leçons, exercices et outils pour apprendre la musique en français. Avec piano virtuel et générateur de gammes.">
+<meta property="og:url" content="https://VOTRE-DOMAINE.example/">
+<meta property="og:image" content="https://VOTRE-DOMAINE.example/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Solfège &amp; Harmonie — Théorie musicale en français, avec une portée musicale et les notes do, ré, mi, fa, sol, la, si">
+
+<!-- ─────────── Twitter / X cards ─────────── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Solfège &amp; Harmonie — Théorie musicale en français">
+<meta name="twitter:description" content="Leçons, exercices et outils pour apprendre la musique en français.">
+<meta name="twitter:image" content="https://VOTRE-DOMAINE.example/og-image.png">
+<meta name="twitter:image:alt" content="Solfège &amp; Harmonie — apprentissage de la musique en français">
+
+<!-- ─────────── Theme color (mobile browser chrome) ─────────── -->
+<meta name="theme-color" content="#f4ecdc">
+<meta name="apple-mobile-web-app-title" content="Solfège &amp; Harmonie">
+<meta name="format-detection" content="telephone=no">
+
+<!-- ─────────── Inline SVG favicon (no extra file needed) ─────────── -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='5' fill='%23f4ecdc'/><text x='16' y='25' font-family='Georgia,serif' font-size='26' fill='%236b1d1d' text-anchor='middle' font-weight='bold'>𝄞</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' rx='30' fill='%23f4ecdc'/><text x='90' y='140' font-family='Georgia,serif' font-size='140' fill='%236b1d1d' text-anchor='middle' font-weight='bold'>𝄞</text></svg>">
+
+<!-- ─────────── Structured data (helps Google understand the site) ─────────── -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "Solfège & Harmonie",
+  "description": "Plateforme d'apprentissage gratuite de la théorie musicale en français : leçons, exercices et outils interactifs.",
+  "url": "https://VOTRE-DOMAINE.example/",
+  "inLanguage": "fr",
+  "educationalCredentialAwarded": "Connaissances en théorie musicale",
+  "teaches": ["Solfège", "Théorie musicale", "Lecture de notes", "Gammes", "Intervalles", "Accords"]
+}
+</script>
+
+<!-- ─────────── Fonts ─────────── -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4ecdc;
+    --paper-deep: #ebe1cc;
+    --ink: #1a1410;
+    --ink-soft: #3a2e22;
+    --rule: #c8b894;
+    --burgundy: #6b1d1d;
+    --burgundy-deep: #4a1212;
+    --gold: #a8884a;
+    --gold-soft: #c4a866;
+    --sage: #5a6b4a;
+    --shadow: rgba(50, 30, 10, 0.12);
+    --shadow-deep: rgba(50, 30, 10, 0.25);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body { min-height: 100vh; }
+
+  body {
+    background: var(--paper);
+    background-image:
+      radial-gradient(ellipse at top, rgba(255, 248, 230, 0.4), transparent 60%),
+      radial-gradient(ellipse at bottom right, rgba(168, 136, 74, 0.08), transparent 50%);
+    color: var(--ink);
+    font-family: 'EB Garamond', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Paper grain texture overlay */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.4 0 0 0 0 0.3 0 0 0 0 0.15 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ─────────── Navigation ─────────── */
+  header {
+    position: relative;
+    z-index: 10;
+    padding: 2rem 3rem 1.2rem;
+    border-bottom: 1px solid var(--rule);
+    background: linear-gradient(to bottom, rgba(244, 236, 220, 0.95), rgba(244, 236, 220, 0.85));
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .brand {
+    cursor: pointer;
+    display: flex;
+    align-items: baseline;
+    gap: 0.8rem;
+    user-select: none;
+  }
+
+  .brand-mark {
+    font-family: 'Marcellus', serif;
+    font-size: 2rem;
+    color: var(--burgundy);
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+
+  .brand-mark .ampersand {
+    font-style: italic;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+
+  .brand-tagline {
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  nav {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Marcellus', serif;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0.3rem 0;
+    transition: color 0.3s ease;
+  }
+
+  nav button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: var(--burgundy);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  nav button:hover, nav button.active {
+    color: var(--burgundy);
+  }
+
+  nav button.active::after,
+  nav button:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* ─────────── Main views ─────────── */
+  main {
+    position: relative;
+    z-index: 5;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 3rem 2rem 6rem;
+  }
+
+  .view { display: none; animation: fadeUp 0.7s cubic-bezier(0.2, 0.8, 0.2, 1); }
+  .view.active { display: block; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* ─────────── HOME ─────────── */
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem 4rem;
+    position: relative;
+  }
+
+  .hero-eyebrow {
+    font-family: 'Marcellus', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.4em;
+    color: var(--gold);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1.05;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--burgundy);
+    font-weight: 600;
+  }
+
+  .hero-lead {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    max-width: 38rem;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-flourish {
+    color: var(--gold);
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    letter-spacing: 0.5rem;
+  }
+
+  /* Section cards on home */
+  .sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .section-card {
+    background: linear-gradient(145deg, rgba(255, 250, 235, 0.6), rgba(235, 225, 204, 0.4));
+    border: 1px solid var(--rule);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+    overflow: hidden;
+  }
+
+  .section-card::before {
+    content: '';
+    position: absolute;
+    inset: 8px;
+    border: 1px solid transparent;
+    transition: border-color 0.4s ease;
+    pointer-events: none;
+  }
+
+  .section-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px var(--shadow);
+  }
+
+  .section-card:hover::before {
+    border-color: var(--gold-soft);
+  }
+
+  .section-card .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--gold);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-card .icon {
+    font-size: 3rem;
+    color: var(--burgundy);
+    margin: 1rem 0;
+    line-height: 1;
+  }
+
+  .section-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--ink);
+    margin-bottom: 0.8rem;
+  }
+
+  .section-card p {
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  /* ─────────── LESSONS ─────────── */
+  .page-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+  }
+
+  .page-header::after {
+    content: '✦';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--paper);
+    padding: 0 1rem;
+    color: var(--gold);
+  }
+
+  .page-header h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: var(--ink);
+  }
+
+  .page-header .sub {
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-top: 0.5rem;
+  }
+
+  .chapter {
+    margin-bottom: 3rem;
+  }
+
+  .chapter-title {
+    font-family: 'Marcellus', serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.3em;
+    color: var(--burgundy);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .chapter-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+
+  .lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .lesson-card {
+    background: rgba(255, 250, 235, 0.4);
+    border: 1px solid var(--rule);
+    padding: 1.3rem 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+
+  .lesson-card:hover {
+    background: rgba(255, 250, 235, 0.8);
+    border-color: var(--gold);
+    transform: translateX(4px);
+  }
+
+  .lesson-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+  }
+
+  .lesson-card p {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  /* ─────────── Lesson detail ─────────── */
+  .back-link {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Marcellus', serif;
+    color: var(--burgundy);
+    font-size: 0.9rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding: 0.5rem 0;
+  }
+
+  .back-link:hover { color: var(--burgundy-deep); }
+
+  .lesson-detail {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .lesson-detail h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--ink);
+  }
+
+  .lesson-detail .lesson-sub {
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .lesson-detail h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--burgundy);
+    margin: 2.5rem 0 1rem;
+  }
+
+  .lesson-detail p {
+    margin-bottom: 1.2rem;
+    color: var(--ink);
+  }
+
+  .lesson-detail .note-name {
+    font-weight: 600;
+    color: var(--burgundy);
+    font-style: italic;
+  }
+
+  .lesson-figure {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, rgba(255, 250, 235, 0.6), rgba(244, 236, 220, 0.4));
+    border-left: 3px solid var(--gold);
+    text-align: center;
+  }
+
+  .lesson-figure .caption {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin-top: 0.8rem;
+  }
+
+  .pull-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--burgundy);
+    border-left: 2px solid var(--gold);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 2rem 0;
+  }
+
+  /* SVG figures */
+  .figure-svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ─────────── EXERCISES ─────────── */
+  .exercise-area {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .exercise-display {
+    background: linear-gradient(to bottom, rgba(255, 250, 235, 0.7), rgba(244, 236, 220, 0.4));
+    border: 1px solid var(--rule);
+    padding: 3rem 2rem;
+    margin: 2rem 0;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .answer-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.8rem;
+    margin: 1.5rem 0;
+  }
+
+  @media (max-width: 600px) {
+    .answer-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  .answer-btn {
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    padding: 1rem 0.5rem;
+    cursor: pointer;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ink);
+    transition: all 0.2s ease;
+    text-transform: lowercase;
+    font-style: italic;
+  }
+
+  .answer-btn:hover:not(:disabled) {
+    background: var(--gold-soft);
+    border-color: var(--gold);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  .answer-btn:disabled { cursor: not-allowed; opacity: 0.5; }
+
+  .answer-btn.correct {
+    background: var(--sage);
+    color: white;
+    border-color: var(--sage);
+  }
+
+  .answer-btn.wrong {
+    background: var(--burgundy);
+    color: white;
+    border-color: var(--burgundy);
+  }
+
+  .scoreboard {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .score-item {
+    text-align: center;
+  }
+
+  .score-num {
+    font-size: 2.5rem;
+    color: var(--burgundy);
+    font-weight: 600;
+  }
+
+  .score-label {
+    font-style: italic;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  .feedback-msg {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    min-height: 1.8em;
+  }
+
+  .feedback-msg.good { color: var(--sage); }
+  .feedback-msg.bad { color: var(--burgundy); }
+
+  .exercise-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .ex-card {
+    background: rgba(255, 250, 235, 0.5);
+    border: 1px solid var(--rule);
+    padding: 2rem 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .ex-card:hover {
+    background: rgba(255, 250, 235, 0.9);
+    border-color: var(--gold);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px var(--shadow);
+  }
+
+  .ex-card h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--burgundy);
+    margin-bottom: 0.5rem;
+  }
+
+  .ex-card p {
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+
+  /* ─────────── TOOLS / PIANO ─────────── */
+  .tool-frame {
+    background: linear-gradient(to bottom, rgba(255, 250, 235, 0.6), rgba(244, 236, 220, 0.3));
+    border: 1px solid var(--rule);
+    padding: 2.5rem;
+    margin: 2rem 0;
+  }
+
+  .tool-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.2rem;
+    color: var(--ink);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+  }
+
+  .tool-desc {
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+
+  /* Piano */
+  .piano-stage {
+    background: linear-gradient(to bottom, #2a1a10, #1a0f08);
+    padding: 2rem 1.5rem;
+    border-radius: 4px;
+    box-shadow: inset 0 4px 12px rgba(0,0,0,0.4);
+    overflow-x: auto;
+  }
+
+  .piano {
+    position: relative;
+    height: 200px;
+    display: flex;
+    min-width: 700px;
+    margin: 0 auto;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+  .white-key {
+    flex: 1;
+    background: linear-gradient(to bottom, #faf6e9 0%, #faf6e9 92%, #d4cab0 100%);
+    border: 1px solid #8a7a5a;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 12px;
+    transition: background 0.08s ease, transform 0.05s ease;
+    user-select: none;
+  }
+
+  .white-key:hover {
+    background: linear-gradient(to bottom, #fff8e0 0%, #fff8e0 92%, #d4cab0 100%);
+  }
+
+  .white-key.active {
+    background: linear-gradient(to bottom, #e8d8a0 0%, #d4c080 100%);
+    transform: translateY(2px);
+  }
+
+  .white-key .key-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    pointer-events: none;
+  }
+
+  .black-keys {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    pointer-events: none;
+  }
+
+  .black-key {
+    position: absolute;
+    width: 8%;
+    height: 100%;
+    background: linear-gradient(to bottom, #1a1208 0%, #2a1f12 80%, #1a0f08 100%);
+    border-radius: 0 0 3px 3px;
+    cursor: pointer;
+    pointer-events: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4), inset 0 -3px 0 #000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 6px;
+    transition: background 0.08s ease, box-shadow 0.05s ease;
+    user-select: none;
+  }
+
+  .black-key:hover {
+    background: linear-gradient(to bottom, #2a1f12 0%, #3a2f1f 80%, #1a0f08 100%);
+  }
+
+  .black-key.active {
+    background: linear-gradient(to bottom, #4a3a20 0%, #3a2f1f 80%, #2a1f12 100%);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4), inset 0 -1px 0 #000;
+  }
+
+  .black-key .key-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 0.75rem;
+    color: var(--gold-soft);
+    pointer-events: none;
+  }
+
+  .piano-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+
+  .toggle-btn {
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-family: 'Marcellus', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    color: var(--ink-soft);
+    transition: all 0.2s ease;
+  }
+
+  .toggle-btn:hover { border-color: var(--gold); color: var(--burgundy); }
+  .toggle-btn.active { background: var(--burgundy); color: var(--paper); border-color: var(--burgundy); }
+
+  /* Scale tool */
+  .scale-output {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+  }
+
+  .scale-note {
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    padding: 1rem 1.2rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: var(--ink);
+    min-width: 60px;
+    text-align: center;
+    border-radius: 2px;
+  }
+
+  .scale-note.root {
+    background: var(--burgundy);
+    color: var(--paper);
+    border-color: var(--burgundy);
+  }
+
+  .scale-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+
+  .scale-controls select {
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    padding: 0.5rem 1rem;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 3rem 2rem 2rem;
+    border-top: 1px solid var(--rule);
+    margin-top: 4rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 0.9rem;
+    position: relative;
+    z-index: 5;
+  }
+
+  footer .flourish {
+    color: var(--gold);
+    margin-bottom: 1rem;
+    letter-spacing: 0.4rem;
+  }
+
+  @media (max-width: 768px) {
+    header { padding: 1.5rem 1.2rem; flex-direction: column; align-items: flex-start; }
+    nav { gap: 1.2rem; flex-wrap: wrap; }
+    nav button { font-size: 0.85rem; }
+    main { padding: 2rem 1rem 4rem; }
+    .hero h1 { font-size: 2.8rem; }
+    .page-header h2 { font-size: 2.2rem; }
+    .scoreboard { gap: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand" onclick="goHome()">
+    <div class="brand-mark">Solfège <span class="ampersand">&amp;</span> Harmonie</div>
+    <div class="brand-tagline">Théorie musicale en français</div>
+  </div>
+  <nav>
+    <button id="nav-home" class="active" onclick="navigate('home')">Accueil</button>
+    <button id="nav-lessons" onclick="navigate('lessons')">Leçons</button>
+    <button id="nav-exercises" onclick="navigate('exercises')">Exercices</button>
+    <button id="nav-tools" onclick="navigate('tools')">Outils</button>
+  </nav>
+</header>
+
+<main>
+
+<!-- ────────── HOME ────────── -->
+<section id="view-home" class="view active">
+  <div class="hero">
+    <div class="hero-eyebrow">Apprendre · Pratiquer · Maîtriser</div>
+    <h1>La <em>théorie musicale</em><br>à la française</h1>
+    <p class="hero-lead">Un parcours complet pour apprendre la musique, avec les noms français des notes — do, ré, mi, fa, sol, la, si — depuis les bases jusqu'aux accords et progressions harmoniques.</p>
+    <div class="hero-flourish">𝄞 ♪ ♩ ♫ ♬</div>
+  </div>
+
+  <div class="sections">
+    <div class="section-card" onclick="navigate('lessons')">
+      <div class="num">— i —</div>
+      <div class="icon">𝄞</div>
+      <h3>Les Leçons</h3>
+      <p>Des leçons illustrées pour comprendre la portée, les durées, les gammes, les intervalles et les accords.</p>
+    </div>
+    <div class="section-card" onclick="navigate('exercises')">
+      <div class="num">— ii —</div>
+      <div class="icon">♪</div>
+      <h3>Les Exercices</h3>
+      <p>Mettez vos connaissances à l'épreuve avec des quiz interactifs sur les notes, intervalles et armures.</p>
+    </div>
+    <div class="section-card" onclick="navigate('tools')">
+      <div class="num">— iii —</div>
+      <div class="icon">♫</div>
+      <h3>Les Outils</h3>
+      <p>Un piano virtuel, un générateur de gammes, un calculateur d'intervalles à votre disposition.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── LESSONS ────────── -->
+<section id="view-lessons" class="view">
+  <div id="lessons-list">
+    <div class="page-header">
+      <h2>Les Leçons</h2>
+      <p class="sub">Un voyage à travers les fondements de la théorie musicale</p>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-title">I · Les bases</div>
+      <div class="lessons-grid" id="basics-grid"></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-title">II · Gammes et armures</div>
+      <div class="lessons-grid" id="scales-grid"></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-title">III · Intervalles</div>
+      <div class="lessons-grid" id="intervals-grid"></div>
+    </div>
+
+    <div class="chapter">
+      <div class="chapter-title">IV · Accords</div>
+      <div class="lessons-grid" id="chords-grid"></div>
+    </div>
+  </div>
+
+  <div id="lesson-detail" style="display: none;">
+    <button class="back-link" onclick="showLessonsList()">← Retour aux leçons</button>
+    <div class="lesson-detail" id="lesson-content"></div>
+  </div>
+</section>
+
+<!-- ────────── EXERCISES ────────── -->
+<section id="view-exercises" class="view">
+  <div id="exercises-menu">
+    <div class="page-header">
+      <h2>Les Exercices</h2>
+      <p class="sub">Pratiquez votre lecture, votre oreille et votre compréhension</p>
+    </div>
+
+    <div class="exercise-selector">
+      <div class="ex-card" onclick="startExercise('notes-treble')">
+        <h4>Identifier les notes</h4>
+        <p>Clé de sol — niveau débutant</p>
+      </div>
+      <div class="ex-card" onclick="startExercise('notes-bass')">
+        <h4>Identifier les notes</h4>
+        <p>Clé de fa — niveau intermédiaire</p>
+      </div>
+      <div class="ex-card" onclick="startExercise('intervals')">
+        <h4>Reconnaître les intervalles</h4>
+        <p>Quantité (seconde, tierce, quarte...)</p>
+      </div>
+      <div class="ex-card" onclick="startExercise('keysig')">
+        <h4>Identifier les armures</h4>
+        <p>Tonalités majeures</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="exercise-active" style="display: none;">
+    <button class="back-link" onclick="endExercise()">← Retour aux exercices</button>
+    <div class="exercise-area">
+      <h2 id="ex-title" style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; color: var(--ink); margin-bottom: 0.5rem; font-weight: 500;"></h2>
+      <p id="ex-instructions" style="font-style: italic; color: var(--ink-soft); margin-bottom: 1.5rem;"></p>
+
+      <div class="scoreboard">
+        <div class="score-item">
+          <div class="score-num" id="score-correct">0</div>
+          <div class="score-label">Bonnes</div>
+        </div>
+        <div class="score-item">
+          <div class="score-num" id="score-total">0</div>
+          <div class="score-label">Total</div>
+        </div>
+      </div>
+
+      <div class="exercise-display" id="ex-display"></div>
+
+      <div id="ex-answers"></div>
+
+      <div class="feedback-msg" id="ex-feedback"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────── TOOLS ────────── -->
+<section id="view-tools" class="view">
+  <div class="page-header">
+    <h2>Les Outils</h2>
+    <p class="sub">Des instruments pour explorer, écouter et composer</p>
+  </div>
+
+  <!-- Piano -->
+  <div class="tool-frame">
+    <h3 class="tool-title">Piano virtuel</h3>
+    <p class="tool-desc">Cliquez sur les touches ou utilisez votre clavier d'ordinateur (rang du milieu — Q,S,D,F,G,H,J pour les blanches).</p>
+
+    <div class="piano-stage">
+      <div class="piano" id="piano"></div>
+    </div>
+
+    <div class="piano-controls">
+      <div class="control-group">
+        <span>Étiquettes :</span>
+        <button class="toggle-btn active" id="toggle-labels" onclick="toggleLabels()">Afficher</button>
+      </div>
+      <div class="control-group">
+        <span>Octave :</span>
+        <button class="toggle-btn" onclick="changeOctave(-1)">−</button>
+        <span id="octave-display" style="min-width: 1.5rem; text-align: center; font-size: 1.2rem; color: var(--burgundy);">4</span>
+        <button class="toggle-btn" onclick="changeOctave(1)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scale Generator -->
+  <div class="tool-frame">
+    <h3 class="tool-title">Générateur de gammes</h3>
+    <p class="tool-desc">Choisissez une tonique et un mode pour voir les notes de la gamme.</p>
+
+    <div class="scale-controls">
+      <select id="scale-root">
+        <option value="0">Do</option>
+        <option value="1">Do♯ / Ré♭</option>
+        <option value="2">Ré</option>
+        <option value="3">Ré♯ / Mi♭</option>
+        <option value="4">Mi</option>
+        <option value="5">Fa</option>
+        <option value="6">Fa♯ / Sol♭</option>
+        <option value="7">Sol</option>
+        <option value="8">Sol♯ / La♭</option>
+        <option value="9">La</option>
+        <option value="10">La♯ / Si♭</option>
+        <option value="11">Si</option>
+      </select>
+      <select id="scale-type">
+        <option value="major">Majeure</option>
+        <option value="minor">Mineure naturelle</option>
+        <option value="harmonic">Mineure harmonique</option>
+        <option value="melodic">Mineure mélodique</option>
+        <option value="dorian">Dorien</option>
+        <option value="phrygian">Phrygien</option>
+        <option value="lydian">Lydien</option>
+        <option value="mixolydian">Mixolydien</option>
+      </select>
+      <button class="toggle-btn" onclick="playScale()" style="background: var(--burgundy); color: var(--paper); border-color: var(--burgundy);">▶ Écouter</button>
+    </div>
+
+    <div class="scale-output" id="scale-output"></div>
+  </div>
+
+  <!-- Interval Calculator -->
+  <div class="tool-frame">
+    <h3 class="tool-title">Calculateur d'intervalles</h3>
+    <p class="tool-desc">Sélectionnez deux notes pour découvrir l'intervalle qui les sépare.</p>
+
+    <div class="scale-controls">
+      <div class="control-group">
+        <span>Note 1 :</span>
+        <select id="int-n1">
+          <option value="0">Do</option><option value="2">Ré</option><option value="4">Mi</option>
+          <option value="5">Fa</option><option value="7">Sol</option><option value="9">La</option><option value="11">Si</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <span>Note 2 :</span>
+        <select id="int-n2">
+          <option value="0">Do</option><option value="2">Ré</option><option value="4" selected>Mi</option>
+          <option value="5">Fa</option><option value="7">Sol</option><option value="9">La</option><option value="11">Si</option>
+        </select>
+      </div>
+      <button class="toggle-btn" onclick="calcInterval()" style="background: var(--burgundy); color: var(--paper); border-color: var(--burgundy);">Calculer</button>
+    </div>
+
+    <div id="interval-result" style="text-align: center; margin-top: 1.5rem; font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-style: italic; color: var(--burgundy); min-height: 2.5rem;"></div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="flourish">✦ ❦ ✦</div>
+  <div>Solfège &amp; Harmonie — un compagnon d'apprentissage musical en français</div>
+  <div style="margin-top: 0.5rem; font-size: 0.85rem;">do · ré · mi · fa · sol · la · si</div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   DONNÉES MUSICALES — Solfège français
+   ═══════════════════════════════════════════════════════════════ */
+
+const NOTES_FR = ['do', 'ré', 'mi', 'fa', 'sol', 'la', 'si'];
+const NOTES_FULL = ['do', 'do♯', 'ré', 'ré♯', 'mi', 'fa', 'fa♯', 'sol', 'sol♯', 'la', 'la♯', 'si'];
+const NOTES_FLATS = ['do', 'ré♭', 'ré', 'mi♭', 'mi', 'fa', 'sol♭', 'sol', 'la♭', 'la', 'si♭', 'si'];
+
+/* ═══════════════════════════════════════════════════════════════
+   NAVIGATION
+   ═══════════════════════════════════════════════════════════════ */
+
+function navigate(view) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-' + view).classList.add('active');
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('nav-' + view).classList.add('active');
+  if (view === 'lessons') showLessonsList();
+  if (view === 'exercises') endExercise();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function goHome() { navigate('home'); }
+
+/* ═══════════════════════════════════════════════════════════════
+   AUDIO — Web Audio API
+   ═══════════════════════════════════════════════════════════════ */
+
+let audioCtx = null;
+function getAudio() {
+  if (!audioCtx) {
+    try { audioCtx = new (window.AudioContext || window.webkitAudioContext)(); }
+    catch (e) { console.warn('Web Audio not supported'); }
+  }
+  return audioCtx;
+}
+
+// midi note (60 = C4) → frequency
+function midiToFreq(midi) {
+  return 440 * Math.pow(2, (midi - 69) / 12);
+}
+
+function playTone(midi, duration = 0.6, when = 0) {
+  const ctx = getAudio();
+  if (!ctx) return;
+  const t0 = ctx.currentTime + when;
+  const freq = midiToFreq(midi);
+
+  // Simple piano-ish tone using two oscillators + envelope
+  const gain = ctx.createGain();
+  gain.gain.setValueAtTime(0, t0);
+  gain.gain.linearRampToValueAtTime(0.3, t0 + 0.01);
+  gain.gain.exponentialRampToValueAtTime(0.001, t0 + duration);
+  gain.connect(ctx.destination);
+
+  const osc1 = ctx.createOscillator();
+  osc1.type = 'triangle';
+  osc1.frequency.value = freq;
+  osc1.connect(gain);
+
+  const osc2 = ctx.createOscillator();
+  osc2.type = 'sine';
+  osc2.frequency.value = freq * 2;
+  const gain2 = ctx.createGain();
+  gain2.gain.value = 0.15;
+  osc2.connect(gain2).connect(gain);
+
+  osc1.start(t0); osc2.start(t0);
+  osc1.stop(t0 + duration); osc2.stop(t0 + duration);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   SVG MUSIC NOTATION HELPERS
+   ═══════════════════════════════════════════════════════════════ */
+
+// Render a staff with optional clef and a note at given position
+// Position is staff position where 0 = bottom line (mi in treble),
+// each step = half a line height
+function renderStaff(noteStep, clef = 'treble', accidental = null, options = {}) {
+  const w = options.width || 320;
+  const h = options.height || 160;
+  const cx = w / 2;
+  const lineSp = 12; // space between staff lines
+  const staffTop = h / 2 - lineSp * 2;
+  const staffBot = h / 2 + lineSp * 2;
+  const noteX = options.noteX || cx + 30;
+
+  // y position for a step (0 = bottom line, +1 each space/line going up)
+  // Each step = lineSp / 2
+  const stepY = (step) => staffBot - step * (lineSp / 2);
+
+  let svg = `<svg viewBox="0 0 ${w} ${h}" class="figure-svg" xmlns="http://www.w3.org/2000/svg">`;
+
+  // staff lines
+  for (let i = 0; i < 5; i++) {
+    const y = staffTop + i * lineSp;
+    svg += `<line x1="20" y1="${y}" x2="${w - 20}" y2="${y}" stroke="#1a1410" stroke-width="1"/>`;
+  }
+
+  // clef
+  if (clef === 'treble') {
+    svg += renderTrebleClef(35, h / 2, lineSp);
+  } else {
+    svg += renderBassClef(35, h / 2, lineSp);
+  }
+
+  // ledger lines if needed
+  if (noteStep !== null && noteStep !== undefined) {
+    const y = stepY(noteStep);
+    // ledger lines above staff
+    if (noteStep > 8) {
+      for (let s = 10; s <= noteStep; s += 2) {
+        svg += `<line x1="${noteX - 12}" y1="${stepY(s)}" x2="${noteX + 12}" y2="${stepY(s)}" stroke="#1a1410" stroke-width="1"/>`;
+      }
+    }
+    // ledger lines below
+    if (noteStep < 0) {
+      for (let s = -2; s >= noteStep; s -= 2) {
+        svg += `<line x1="${noteX - 12}" y1="${stepY(s)}" x2="${noteX + 12}" y2="${stepY(s)}" stroke="#1a1410" stroke-width="1"/>`;
+      }
+    }
+    // middle C ledger
+    if (clef === 'treble' && noteStep === -2) {
+      svg += `<line x1="${noteX - 12}" y1="${stepY(-2)}" x2="${noteX + 12}" y2="${stepY(-2)}" stroke="#1a1410" stroke-width="1"/>`;
+    }
+
+    // accidental
+    if (accidental) {
+      const ax = noteX - 18;
+      if (accidental === 'sharp') {
+        svg += `<text x="${ax}" y="${y + 5}" font-size="22" font-family="serif" fill="#1a1410" text-anchor="middle">♯</text>`;
+      } else if (accidental === 'flat') {
+        svg += `<text x="${ax}" y="${y + 6}" font-size="24" font-family="serif" fill="#1a1410" text-anchor="middle">♭</text>`;
+      } else if (accidental === 'natural') {
+        svg += `<text x="${ax}" y="${y + 5}" font-size="22" font-family="serif" fill="#1a1410" text-anchor="middle">♮</text>`;
+      }
+    }
+
+    // note head (oval)
+    svg += `<ellipse cx="${noteX}" cy="${y}" rx="7" ry="5.5" fill="#1a1410" transform="rotate(-20 ${noteX} ${y})"/>`;
+
+    // stem (whole notes have no stem; we'll add stem for non-whole)
+    if (options.duration !== 'whole') {
+      if (noteStep < 4) {
+        // stem up
+        svg += `<line x1="${noteX + 6}" y1="${y - 1}" x2="${noteX + 6}" y2="${y - 35}" stroke="#1a1410" stroke-width="1.5"/>`;
+      } else {
+        // stem down
+        svg += `<line x1="${noteX - 6}" y1="${y + 1}" x2="${noteX - 6}" y2="${y + 35}" stroke="#1a1410" stroke-width="1.5"/>`;
+      }
+    }
+  }
+
+  // Render extra notes if provided (for intervals)
+  if (options.extraNotes) {
+    for (const n of options.extraNotes) {
+      const y = stepY(n.step);
+      const x = n.x || noteX + 40;
+      // ledger lines
+      if (n.step > 8) {
+        for (let s = 10; s <= n.step; s += 2) {
+          svg += `<line x1="${x - 12}" y1="${stepY(s)}" x2="${x + 12}" y2="${stepY(s)}" stroke="#1a1410" stroke-width="1"/>`;
+        }
+      }
+      if (n.step < 0) {
+        for (let s = -2; s >= n.step; s -= 2) {
+          svg += `<line x1="${x - 12}" y1="${stepY(s)}" x2="${x + 12}" y2="${stepY(s)}" stroke="#1a1410" stroke-width="1"/>`;
+        }
+      }
+      svg += `<ellipse cx="${x}" cy="${y}" rx="7" ry="5.5" fill="#1a1410" transform="rotate(-20 ${x} ${y})"/>`;
+      if (n.step < 4) {
+        svg += `<line x1="${x + 6}" y1="${y - 1}" x2="${x + 6}" y2="${y - 35}" stroke="#1a1410" stroke-width="1.5"/>`;
+      } else {
+        svg += `<line x1="${x - 6}" y1="${y + 1}" x2="${x - 6}" y2="${y + 35}" stroke="#1a1410" stroke-width="1.5"/>`;
+      }
+    }
+  }
+
+  // Render key signature if provided
+  if (options.keySig) {
+    let kx = 65;
+    for (const acc of options.keySig) {
+      const y = stepY(acc.step);
+      const symbol = acc.type === 'sharp' ? '♯' : '♭';
+      const offset = acc.type === 'sharp' ? 5 : 6;
+      const size = acc.type === 'sharp' ? 22 : 24;
+      svg += `<text x="${kx}" y="${y + offset}" font-size="${size}" font-family="serif" fill="#1a1410" text-anchor="middle">${symbol}</text>`;
+      kx += 10;
+    }
+  }
+
+  svg += `</svg>`;
+  return svg;
+}
+
+function renderTrebleClef(cx, cy, lineSp) {
+  // Stylized treble clef centered on G line (line 2 from bottom)
+  // Use Unicode but scaled
+  return `<text x="${cx}" y="${cy + lineSp * 1.5}" font-size="${lineSp * 5}" font-family="serif" fill="#1a1410" text-anchor="middle" style="font-weight: 500;">𝄞</text>`;
+}
+
+function renderBassClef(cx, cy, lineSp) {
+  return `<text x="${cx}" y="${cy - lineSp * 0.5}" font-size="${lineSp * 4}" font-family="serif" fill="#1a1410" text-anchor="middle">𝄢</text>`;
+}
+
+// Note positions on treble clef (step from bottom line)
+// bottom line = mi (step 0), then space fa (1), line sol (2), space la (3), line si (4)...
+// In treble: lines bottom to top = mi, sol, si, ré, fa (steps 0, 2, 4, 6, 8)
+// Spaces bottom to top = fa, la, do, mi (steps 1, 3, 5, 7)
+const TREBLE_POSITIONS = {
+  'do4': -2,  // middle C — one ledger below
+  'ré4': -1,
+  'mi4': 0,
+  'fa4': 1,
+  'sol4': 2,
+  'la4': 3,
+  'si4': 4,
+  'do5': 5,
+  'ré5': 6,
+  'mi5': 7,
+  'fa5': 8,
+  'sol5': 9,
+  'la5': 10
+};
+
+const BASS_POSITIONS = {
+  'sol2': -2,
+  'la2': -1,
+  'si2': 0,
+  'do3': 1,
+  'ré3': 2,
+  'mi3': 3,
+  'fa3': 4,
+  'sol3': 5,
+  'la3': 6,
+  'si3': 7,
+  'do4': 8,
+  'ré4': 9
+};
+
+/* ═══════════════════════════════════════════════════════════════
+   LEÇONS — Données
+   ═══════════════════════════════════════════════════════════════ */
+
+const LESSONS = {
+  // BASICS
+  'portee': {
+    chapter: 'basics',
+    title: 'La portée et les clés',
+    sub: 'Le canevas sur lequel s\'écrit la musique',
+    content: `
+      <p>La <span class="note-name">portée</span> (ou <em>portée musicale</em>) est l'ensemble de cinq lignes horizontales parallèles sur lesquelles on écrit la musique. Les notes peuvent être placées sur les lignes, dans les espaces entre les lignes, ou au-dessus et au-dessous grâce à des <em>lignes supplémentaires</em>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(null, 'treble', null, {width: 360, height: 140})}
+        <div class="caption">Une portée vierge avec sa clé de sol</div>
+      </div>
+
+      <h3>Les clés</h3>
+      <p>Une <span class="note-name">clé</span> est un symbole placé au début de la portée pour indiquer la hauteur des notes. Les deux clés les plus courantes sont :</p>
+
+      <p><span class="note-name">La clé de sol</span> — utilisée pour les notes aiguës (voix de soprano, main droite du piano, violon). Elle s'enroule autour de la deuxième ligne en partant du bas, désignant ainsi cette ligne comme étant le <em>sol</em>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(2, 'treble', null, {width: 280, height: 140})}
+        <div class="caption">La note <em>sol</em> sur la deuxième ligne</div>
+      </div>
+
+      <p><span class="note-name">La clé de fa</span> — utilisée pour les notes graves (voix de basse, main gauche du piano, contrebasse). Ses deux points encadrent la quatrième ligne, désignant cette ligne comme étant le <em>fa</em>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(4, 'bass', null, {width: 280, height: 140})}
+        <div class="caption">La note <em>fa</em> sur la quatrième ligne (clé de fa)</div>
+      </div>
+
+      <h3>Les noms des notes sur la portée (clé de sol)</h3>
+      <p>De bas en haut, les <strong>lignes</strong> portent les notes : <span class="note-name">mi, sol, si, ré, fa</span>.<br>
+      Les <strong>espaces</strong> portent les notes : <span class="note-name">fa, la, do, mi</span>.</p>
+
+      <div class="lesson-figure">
+        <svg viewBox="0 0 540 180" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
+          ${(() => {
+            let s = '';
+            const lineSp = 12, staffTop = 60, staffBot = 108;
+            const stepY = (step) => staffBot - step * (lineSp / 2);
+            for (let i = 0; i < 5; i++) {
+              s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="520" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
+            }
+            s += `<text x="35" y="${staffBot - lineSp * 0.5 + 30}" font-size="60" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
+            const seq = [{n:'mi', s:0}, {n:'fa', s:1}, {n:'sol', s:2}, {n:'la', s:3}, {n:'si', s:4}, {n:'do', s:5}, {n:'ré', s:6}, {n:'mi', s:7}, {n:'fa', s:8}];
+            seq.forEach((note, i) => {
+              const x = 110 + i * 45;
+              const y = stepY(note.s);
+              s += `<ellipse cx="${x}" cy="${y}" rx="7" ry="5.5" fill="#6b1d1d" transform="rotate(-20 ${x} ${y})"/>`;
+              s += `<text x="${x}" y="155" font-size="14" font-style="italic" font-family="serif" fill="#1a1410" text-anchor="middle">${note.n}</text>`;
+            });
+            return s;
+          })()}
+        </svg>
+        <div class="caption">Les sept notes de la gamme, montées sur la portée</div>
+      </div>
+
+      <p class="pull-quote">Pour mémoriser les lignes : « <em>Mi sol-si Réf-</em>uge », et pour les espaces : « <em>Fa-la-do-mi</em> » se chante naturellement.</p>
+    `
+  },
+
+  'durees': {
+    chapter: 'basics',
+    title: 'La durée des notes',
+    sub: 'Compter le temps en musique',
+    content: `
+      <p>En musique, chaque note possède une <span class="note-name">durée</span> précise. La forme de la note nous indique combien de temps elle dure par rapport aux autres.</p>
+
+      <h3>Les principales valeurs</h3>
+
+      <div class="lesson-figure">
+        <svg viewBox="0 0 600 100" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
+          <g font-family="serif" font-size="50" fill="#1a1410" text-anchor="middle">
+            <text x="60" y="65">𝅝</text>
+            <text x="180" y="65">𝅗𝅥</text>
+            <text x="300" y="70">𝅘𝅥</text>
+            <text x="420" y="70">𝅘𝅥𝅮</text>
+            <text x="540" y="70">𝅘𝅥𝅯</text>
+          </g>
+          <g font-family="serif" font-style="italic" font-size="14" fill="#3a2e22" text-anchor="middle">
+            <text x="60" y="95">ronde — 4 temps</text>
+            <text x="180" y="95">blanche — 2 temps</text>
+            <text x="300" y="95">noire — 1 temps</text>
+            <text x="420" y="95">croche — ½ temps</text>
+            <text x="540" y="95">double croche — ¼</text>
+          </g>
+        </svg>
+      </div>
+
+      <p>Chaque valeur dure exactement <strong>la moitié</strong> de la précédente. Une <span class="note-name">ronde</span> vaut deux <span class="note-name">blanches</span>, qui valent quatre <span class="note-name">noires</span>, qui valent huit <span class="note-name">croches</span>, et ainsi de suite.</p>
+
+      <h3>Les silences</h3>
+      <p>À chaque valeur de note correspond un <span class="note-name">silence</span> de même durée. Les silences indiquent au musicien de ne pas jouer pendant la durée correspondante.</p>
+
+      <div class="lesson-figure">
+        <svg viewBox="0 0 600 100" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
+          <g font-family="serif" font-size="40" fill="#1a1410" text-anchor="middle">
+            <text x="60" y="55">𝄻</text>
+            <text x="180" y="60">𝄼</text>
+            <text x="300" y="60">𝄽</text>
+            <text x="420" y="60">𝄾</text>
+            <text x="540" y="60">𝄿</text>
+          </g>
+          <g font-family="serif" font-style="italic" font-size="14" fill="#3a2e22" text-anchor="middle">
+            <text x="60" y="90">pause</text>
+            <text x="180" y="90">demi-pause</text>
+            <text x="300" y="90">soupir</text>
+            <text x="420" y="90">demi-soupir</text>
+            <text x="540" y="90">quart de soupir</text>
+          </g>
+        </svg>
+      </div>
+
+      <h3>Le point d'augmentation</h3>
+      <p>Un petit point placé à droite d'une note (ou d'un silence) en augmente la durée de <strong>la moitié</strong> de sa valeur. Ainsi, une blanche pointée vaut trois temps (2 + 1), et une noire pointée vaut un temps et demi (1 + ½).</p>
+    `
+  },
+
+  'mesures': {
+    chapter: 'basics',
+    title: 'Les mesures et signatures rythmiques',
+    sub: 'Organiser le temps musical',
+    content: `
+      <p>La musique est divisée en <span class="note-name">mesures</span> (ou <em>barres</em>) à l'aide de barres verticales appelées <em>barres de mesure</em>. Chaque mesure contient une quantité fixe de temps.</p>
+
+      <h3>La signature rythmique</h3>
+      <p>Au début de chaque morceau, après la clé, on trouve la <span class="note-name">signature rythmique</span> (ou <em>chiffrage de mesure</em>) composée de deux chiffres superposés.</p>
+
+      <ul style="margin: 1rem 0 1rem 2rem;">
+        <li>Le <strong>chiffre du haut</strong> indique combien de temps il y a dans une mesure.</li>
+        <li>Le <strong>chiffre du bas</strong> indique la valeur de chaque temps (4 = noire, 8 = croche, 2 = blanche).</li>
+      </ul>
+
+      <div class="lesson-figure">
+        <svg viewBox="0 0 360 130" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
+          ${(() => {
+            const lineSp = 12, staffTop = 40, staffBot = 88;
+            let s = '';
+            for (let i = 0; i < 5; i++) {
+              s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="340" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
+            }
+            s += `<text x="40" y="${staffBot - lineSp * 0.5 + 25}" font-size="55" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
+            s += `<text x="85" y="62" font-size="26" font-weight="bold" font-family="serif" fill="#1a1410" text-anchor="middle">4</text>`;
+            s += `<text x="85" y="86" font-size="26" font-weight="bold" font-family="serif" fill="#1a1410" text-anchor="middle">4</text>`;
+            s += `<line x1="200" y1="${staffTop}" x2="200" y2="${staffBot}" stroke="#1a1410" stroke-width="1"/>`;
+            s += `<line x1="338" y1="${staffTop}" x2="338" y2="${staffBot}" stroke="#1a1410" stroke-width="1"/>`;
+            // notes
+            ['noire','noire','noire','noire','noire','noire','noire','noire'].forEach((_,i) => {
+              const x = 115 + (i < 4 ? i * 20 : 105 + (i-4) * 20);
+              const y = staffBot - 2 * (lineSp/2); // sol
+              s += `<ellipse cx="${x}" cy="${y}" rx="6" ry="5" fill="#1a1410" transform="rotate(-20 ${x} ${y})"/>`;
+              s += `<line x1="${x+5}" y1="${y}" x2="${x+5}" y2="${y-28}" stroke="#1a1410" stroke-width="1.5"/>`;
+            });
+            return s;
+          })()}
+        </svg>
+        <div class="caption">Mesure à 4/4 : quatre temps de noire par mesure</div>
+      </div>
+
+      <h3>Les signatures les plus courantes</h3>
+      <p><strong>4/4</strong> — la plus répandue, dite <em>mesure à quatre temps</em> ou <em>C</em> (commun). Présente dans la pop, le rock, le jazz, la musique classique.</p>
+      <p><strong>3/4</strong> — la <em>valse</em>, trois temps de noire par mesure. <em>Un</em>, deux, trois, <em>un</em>, deux, trois…</p>
+      <p><strong>2/4</strong> — la <em>marche</em>, courte et pulsée, deux temps par mesure.</p>
+      <p><strong>6/8</strong> — six croches groupées en deux temps composés, donnant un balancement typique des berceuses et gigues.</p>
+    `
+  },
+
+  'alterations': {
+    chapter: 'basics',
+    title: 'Les altérations',
+    sub: 'Dièses, bémols et bécarres',
+    content: `
+      <p>Les <span class="note-name">altérations</span> sont des symboles qui modifient la hauteur d'une note d'un <em>demi-ton</em>. Il en existe trois principales.</p>
+
+      <h3>Le dièse (♯)</h3>
+      <p>Le <span class="note-name">dièse</span> élève la note d'un demi-ton. Ainsi, <em>fa♯</em> (fa dièse) sonne un demi-ton plus haut que <em>fa</em>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(1, 'treble', 'sharp', {width: 260, height: 140})}
+        <div class="caption">Fa dièse — un demi-ton au-dessus de fa</div>
+      </div>
+
+      <h3>Le bémol (♭)</h3>
+      <p>Le <span class="note-name">bémol</span> abaisse la note d'un demi-ton. Ainsi, <em>si♭</em> (si bémol) sonne un demi-ton plus bas que <em>si</em>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(4, 'treble', 'flat', {width: 260, height: 140})}
+        <div class="caption">Si bémol — un demi-ton en dessous de si</div>
+      </div>
+
+      <h3>Le bécarre (♮)</h3>
+      <p>Le <span class="note-name">bécarre</span> annule un dièse ou un bémol précédent, ramenant la note à sa hauteur naturelle.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(1, 'treble', 'natural', {width: 260, height: 140})}
+        <div class="caption">Bécarre — la note redevient naturelle</div>
+      </div>
+
+      <h3>Ton et demi-ton</h3>
+      <p>Le <span class="note-name">demi-ton</span> est le plus petit intervalle utilisé dans la musique occidentale traditionnelle. Sur un piano, c'est la distance entre deux touches adjacentes (qu'elles soient blanches ou noires).</p>
+
+      <p>Le <span class="note-name">ton</span> équivaut à deux demi-tons. La distance entre <em>do</em> et <em>ré</em> est un ton (car il y a une touche noire entre les deux), mais la distance entre <em>mi</em> et <em>fa</em> n'est qu'un demi-ton (touches adjacentes sans touche noire entre elles).</p>
+
+      <p class="pull-quote">Entre <em>mi-fa</em> et <em>si-do</em> : un demi-ton naturel. Partout ailleurs entre notes consécutives : un ton.</p>
+    `
+  },
+
+  'gamme-majeure': {
+    chapter: 'scales',
+    title: 'La gamme majeure',
+    sub: 'La gamme fondatrice de la musique tonale',
+    content: `
+      <p>La <span class="note-name">gamme majeure</span> est constituée de sept notes ascendantes suivant un schéma précis de tons et demi-tons :</p>
+
+      <p class="pull-quote">Ton — Ton — ½ ton — Ton — Ton — Ton — ½ ton</p>
+
+      <h3>La gamme de do majeur</h3>
+      <p>La gamme de <em>do majeur</em> est la plus simple : elle ne comporte aucune altération. Elle utilise les sept notes naturelles : <strong>do, ré, mi, fa, sol, la, si</strong>, puis revient à <strong>do</strong>.</p>
+
+      <div class="lesson-figure">
+        <svg viewBox="0 0 600 180" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
+          ${(() => {
+            const lineSp = 12, staffTop = 50, staffBot = 98;
+            const stepY = (step) => staffBot - step * (lineSp / 2);
+            let s = '';
+            for (let i = 0; i < 5; i++) {
+              s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="580" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
+            }
+            s += `<text x="40" y="${staffBot - lineSp * 0.5 + 28}" font-size="55" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
+            const scale = [
+              {n:'do', s:-2}, {n:'ré', s:-1}, {n:'mi', s:0}, {n:'fa', s:1},
+              {n:'sol', s:2}, {n:'la', s:3}, {n:'si', s:4}, {n:'do', s:5}
+            ];
+            scale.forEach((note, i) => {
+              const x = 100 + i * 60;
+              const y = stepY(note.s);
+              if (note.s === -2) {
+                s += `<line x1="${x - 12}" y1="${stepY(-2)}" x2="${x + 12}" y2="${stepY(-2)}" stroke="#1a1410"/>`;
+              }
+              s += `<ellipse cx="${x}" cy="${y}" rx="7" ry="5.5" fill="#1a1410" transform="rotate(-20 ${x} ${y})"/>`;
+              if (note.s < 4) {
+                s += `<line x1="${x+6}" y1="${y}" x2="${x+6}" y2="${y-32}" stroke="#1a1410" stroke-width="1.5"/>`;
+              } else {
+                s += `<line x1="${x-6}" y1="${y}" x2="${x-6}" y2="${y+32}" stroke="#1a1410" stroke-width="1.5"/>`;
+              }
+              s += `<text x="${x}" y="160" font-size="14" font-style="italic" font-family="serif" fill="#6b1d1d" text-anchor="middle">${note.n}</text>`;
+            });
+            // tone markers
+            const intervals = ['T','T','½','T','T','T','½'];
+            intervals.forEach((iv, i) => {
+              const x = 130 + i * 60;
+              s += `<text x="${x}" y="40" font-size="12" font-family="serif" fill="#a8884a" font-style="italic" text-anchor="middle">${iv}</text>`;
+            });
+            return s;
+          })()}
+        </svg>
+        <div class="caption">La gamme de do majeur — tous les degrés naturels</div>
+      </div>
+
+      <h3>Les degrés de la gamme</h3>
+      <p>Chaque note d'une gamme possède un nom particulier qui décrit sa fonction harmonique :</p>
+
+      <ul style="margin: 1rem 0 1.5rem 2rem; list-style: none;">
+        <li><strong>I — Tonique</strong> : la note fondamentale, qui donne son nom à la gamme.</li>
+        <li><strong>II — Sus-tonique</strong> : la note juste au-dessus de la tonique.</li>
+        <li><strong>III — Médiante</strong> : à mi-chemin entre la tonique et la dominante.</li>
+        <li><strong>IV — Sous-dominante</strong> : la quarte juste au-dessus de la tonique.</li>
+        <li><strong>V — Dominante</strong> : la quinte, deuxième note la plus importante.</li>
+        <li><strong>VI — Sus-dominante</strong> : la sixième note.</li>
+        <li><strong>VII — Sensible</strong> : à un demi-ton de la tonique, elle « tire » vers elle.</li>
+      </ul>
+
+      <h3>Construire d'autres gammes majeures</h3>
+      <p>Pour construire une gamme majeure à partir de n'importe quelle note, il suffit d'appliquer le schéma <em>ton-ton-demi-ton-ton-ton-ton-demi-ton</em>. Par exemple, la gamme de <em>sol majeur</em> contient un <em>fa♯</em>, et celle de <em>fa majeur</em> contient un <em>si♭</em>.</p>
+    `
+  },
+
+  'gammes-mineures': {
+    chapter: 'scales',
+    title: 'Les gammes mineures',
+    sub: 'Naturelle, harmonique et mélodique',
+    content: `
+      <p>Il existe <strong>trois</strong> types de gammes mineures, chacune avec son caractère particulier. Toutes partagent les mêmes premières notes mais diffèrent dans leurs degrés supérieurs.</p>
+
+      <h3>La gamme mineure naturelle</h3>
+      <p>Schéma : <em>Ton — ½ ton — Ton — Ton — ½ ton — Ton — Ton</em></p>
+      <p>La gamme de <em>la mineur naturel</em> contient les mêmes notes que <em>do majeur</em> mais commence sur <em>la</em> : la, si, do, ré, mi, fa, sol, la. C'est la gamme mineure la plus « pure ».</p>
+
+      <h3>La gamme mineure harmonique</h3>
+      <p>Identique à la mineure naturelle, mais avec le <strong>septième degré haussé</strong> d'un demi-ton. Cela crée une <em>sensible</em> qui tire fortement vers la tonique, mais aussi un intervalle augmenté caractéristique entre les degrés VI et VII.</p>
+      <p>En la mineur harmonique : la, si, do, ré, mi, fa, <strong>sol♯</strong>, la.</p>
+
+      <h3>La gamme mineure mélodique</h3>
+      <p>En montant : les <strong>VI<sup>e</sup> et VII<sup>e</sup> degrés sont haussés</strong> (élimine l'intervalle augmenté disgracieux).<br>
+      En descendant : on revient à la mineure naturelle.</p>
+      <p>En la mineur mélodique ascendant : la, si, do, ré, mi, <strong>fa♯</strong>, <strong>sol♯</strong>, la.</p>
+
+      <p class="pull-quote">La mineure naturelle est douce et modale ; l'harmonique a un goût oriental ; la mélodique chante naturellement.</p>
+    `
+  },
+
+  'armures': {
+    chapter: 'scales',
+    title: 'Les armures',
+    sub: 'L\'art de noter les altérations en début de portée',
+    content: `
+      <p>Une <span class="note-name">armure</span> (ou <em>armure de la clé</em>) est l'ensemble des dièses ou bémols placés au début de la portée, juste après la clé. Elle indique la <strong>tonalité</strong> du morceau et évite d'avoir à écrire les altérations devant chaque note concernée.</p>
+
+      <h3>L'ordre des dièses</h3>
+      <p>Les dièses apparaissent toujours dans cet ordre fixe : <strong>fa, do, sol, ré, la, mi, si</strong>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(null, 'treble', null, {
+          width: 320, height: 140,
+          keySig: [
+            {step: 8, type: 'sharp'},   // fa♯ (top line)
+            {step: 5, type: 'sharp'},   // do♯
+            {step: 9, type: 'sharp'},   // sol♯
+            {step: 6, type: 'sharp'}    // ré♯
+          ]
+        })}
+        <div class="caption">Armure de mi majeur — quatre dièses : fa♯, do♯, sol♯, ré♯</div>
+      </div>
+
+      <h3>L'ordre des bémols</h3>
+      <p>Les bémols apparaissent dans l'ordre inverse : <strong>si, mi, la, ré, sol, do, fa</strong>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(null, 'treble', null, {
+          width: 320, height: 140,
+          keySig: [
+            {step: 4, type: 'flat'},    // si♭
+            {step: 7, type: 'flat'},    // mi♭
+            {step: 3, type: 'flat'}     // la♭
+          ]
+        })}
+        <div class="caption">Armure de mi♭ majeur — trois bémols : si♭, mi♭, la♭</div>
+      </div>
+
+      <h3>Le cycle des quintes</h3>
+      <p>Le <span class="note-name">cycle des quintes</span> est un outil mnémotechnique puissant : en montant par quintes justes, on ajoute un dièse à chaque tonalité ; en descendant par quartes (ou en montant par quintes), on ajoute un bémol.</p>
+
+      <p>À partir de <em>do majeur</em> (aucune altération) :</p>
+      <ul style="margin: 1rem 0 1rem 2rem;">
+        <li>Sol majeur — 1 dièse (fa♯)</li>
+        <li>Ré majeur — 2 dièses (fa♯, do♯)</li>
+        <li>La majeur — 3 dièses</li>
+        <li>Mi majeur — 4 dièses</li>
+        <li>Si majeur — 5 dièses</li>
+      </ul>
+
+      <p>Et dans l'autre sens :</p>
+      <ul style="margin: 1rem 0 1rem 2rem;">
+        <li>Fa majeur — 1 bémol (si♭)</li>
+        <li>Si♭ majeur — 2 bémols</li>
+        <li>Mi♭ majeur — 3 bémols</li>
+        <li>La♭ majeur — 4 bémols</li>
+      </ul>
+    `
+  },
+
+  'intervalles-base': {
+    chapter: 'intervals',
+    title: 'Les intervalles',
+    sub: 'Mesurer la distance entre deux notes',
+    content: `
+      <p>Un <span class="note-name">intervalle</span> est la distance entre deux notes. Pour le mesurer, on compte les noms de notes en incluant la note de départ et celle d'arrivée.</p>
+
+      <h3>La quantité (nombre)</h3>
+      <p>Par exemple, de <em>do</em> à <em>mi</em>, on compte : do (1), ré (2), mi (3) — c'est donc une <strong>tierce</strong>.</p>
+
+      <div class="lesson-figure">
+        ${renderStaff(-2, 'treble', null, {
+          width: 320, height: 160,
+          extraNotes: [{step: 0, x: 200}]
+        })}
+        <div class="caption">Une tierce de do à mi</div>
+      </div>
+
+      <p>Les noms des intervalles par quantité :</p>
+      <ul style="margin: 1rem 0 1rem 2rem;">
+        <li><strong>Unisson</strong> — même note</li>
+        <li><strong>Seconde</strong> — 2 noms de notes (do → ré)</li>
+        <li><strong>Tierce</strong> — 3 noms (do → mi)</li>
+        <li><strong>Quarte</strong> — 4 noms (do → fa)</li>
+        <li><strong>Quinte</strong> — 5 noms (do → sol)</li>
+        <li><strong>Sixte</strong> — 6 noms (do → la)</li>
+        <li><strong>Septième</strong> — 7 noms (do → si)</li>
+        <li><strong>Octave</strong> — 8 noms (do → do supérieur)</li>
+      </ul>
+
+      <h3>La qualité</h3>
+      <p>La quantité seule ne suffit pas : il faut aussi préciser la <span class="note-name">qualité</span> de l'intervalle. Les qualités possibles sont :</p>
+
+      <ul style="margin: 1rem 0 1rem 2rem;">
+        <li><strong>Juste</strong> — pour les unissons, quartes, quintes et octaves</li>
+        <li><strong>Majeur / mineur</strong> — pour les secondes, tierces, sixtes et septièmes</li>
+        <li><strong>Augmenté</strong> — un demi-ton plus grand que juste ou majeur</li>
+        <li><strong>Diminué</strong> — un demi-ton plus petit que juste ou mineur</li>
+      </ul>
+
+      <p>Par exemple, do → mi est une <em>tierce majeure</em> (4 demi-tons), tandis que do → mi♭ est une <em>tierce mineure</em> (3 demi-tons).</p>
+
+      <p class="pull-quote">Pour calculer un intervalle : d'abord la quantité (en comptant les noms), puis la qualité (en comptant les demi-tons).</p>
+    `
+  },
+
+  'accords-base': {
+    chapter: 'chords',
+    title: 'Introduction aux accords',
+    sub: 'Triades majeures, mineures, augmentées et diminuées',
+    content: `
+      <p>Un <span class="note-name">accord</span> est l'empilement de plusieurs notes jouées simultanément. L'accord le plus fondamental est la <span class="note-name">triade</span> — trois notes empilées par tierces.</p>
+
+      <h3>La construction d'une triade</h3>
+      <p>Une triade se construit en empilant deux tierces sur une note fondamentale :</p>
+
+      <ul style="margin: 1rem 0 1rem 2rem;">
+        <li>La <strong>fondamentale</strong> — la note de base</li>
+        <li>La <strong>tierce</strong> — une tierce au-dessus</li>
+        <li>La <strong>quinte</strong> — une quinte au-dessus de la fondamentale</li>
+      </ul>
+
+      <h3>Les quatre types de triades</h3>
+
+      <p><strong>Triade majeure</strong> — tierce majeure + tierce mineure. Sonorité claire, joyeuse.<br>
+      Exemple : do — mi — sol</p>
+
+      <p><strong>Triade mineure</strong> — tierce mineure + tierce majeure. Sonorité sombre, mélancolique.<br>
+      Exemple : do — mi♭ — sol</p>
+
+      <p><strong>Triade diminuée</strong> — deux tierces mineures. Sonorité tendue, instable.<br>
+      Exemple : do — mi♭ — sol♭</p>
+
+      <p><strong>Triade augmentée</strong> — deux tierces majeures. Sonorité mystérieuse, suspendue.<br>
+      Exemple : do — mi — sol♯</p>
+
+      <div class="lesson-figure">
+        <svg viewBox="0 0 480 180" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
+          ${(() => {
+            const lineSp = 12, staffTop = 50, staffBot = 98;
+            const stepY = (step) => staffBot - step * (lineSp / 2);
+            let s = '';
+            for (let i = 0; i < 5; i++) {
+              s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="460" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
+            }
+            s += `<text x="40" y="${staffBot - lineSp * 0.5 + 28}" font-size="55" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
+            // 4 chords on C
+            const chords = [
+              {x: 120, steps: [-2, 0, 2], label: 'Do M'},          // C E G
+              {x: 220, steps: [-2, 0, 2], label: 'Do m', flat: 0}, // C Eb G
+              {x: 320, steps: [-2, 0, 2], label: 'Do°', flats: [0, 2]},
+              {x: 420, steps: [-2, 0, 2], label: 'Do+', sharp: 2}
+            ];
+            chords.forEach((ch, ci) => {
+              if (ci === 0) {
+                ch.steps.forEach(st => {
+                  const y = stepY(st);
+                  if (st === -2) s += `<line x1="${ch.x - 12}" y1="${y}" x2="${ch.x + 12}" y2="${y}" stroke="#1a1410"/>`;
+                  s += `<ellipse cx="${ch.x}" cy="${y}" rx="7" ry="5.5" fill="#1a1410" transform="rotate(-20 ${ch.x} ${y})"/>`;
+                });
+              } else if (ci === 1) {
+                ch.steps.forEach((st, i) => {
+                  const y = stepY(st);
+                  if (st === -2) s += `<line x1="${ch.x - 12}" y1="${y}" x2="${ch.x + 12}" y2="${y}" stroke="#1a1410"/>`;
+                  if (i === 1) s += `<text x="${ch.x - 18}" y="${y + 6}" font-size="22" font-family="serif" fill="#1a1410" text-anchor="middle">♭</text>`;
+                  s += `<ellipse cx="${ch.x}" cy="${y}" rx="7" ry="5.5" fill="#1a1410" transform="rotate(-20 ${ch.x} ${y})"/>`;
+                });
+              } else if (ci === 2) {
+                ch.steps.forEach((st, i) => {
+                  const y = stepY(st);
+                  if (st === -2) s += `<line x1="${ch.x - 12}" y1="${y}" x2="${ch.x + 12}" y2="${y}" stroke="#1a1410"/>`;
+                  if (i === 1 || i === 2) s += `<text x="${ch.x - 18 - (i===2?10:0)}" y="${y + 6}" font-size="22" font-family="serif" fill="#1a1410" text-anchor="middle">♭</text>`;
+                  s += `<ellipse cx="${ch.x}" cy="${y}" rx="7" ry="5.5" fill="#1a1410" transform="rotate(-20 ${ch.x} ${y})"/>`;
+                });
+              } else if (ci === 3) {
+                ch.steps.forEach((st, i) => {
+                  const y = stepY(st);
+                  if (st === -2) s += `<line x1="${ch.x - 12}" y1="${y}" x2="${ch.x + 12}" y2="${y}" stroke="#1a1410"/>`;
+                  if (i === 2) s += `<text x="${ch.x - 18}" y="${y + 5}" font-size="22" font-family="serif" fill="#1a1410" text-anchor="middle">♯</text>`;
+                  s += `<ellipse cx="${ch.x}" cy="${y}" rx="7" ry="5.5" fill="#1a1410" transform="rotate(-20 ${ch.x} ${y})"/>`;
+                });
+              }
+              s += `<text x="${ch.x}" y="155" font-size="13" font-style="italic" font-family="serif" fill="#6b1d1d" text-anchor="middle">${ch.label}</text>`;
+            });
+            return s;
+          })()}
+        </svg>
+        <div class="caption">Les quatre triades construites sur do</div>
+      </div>
+
+      <p>Dans le système classique français, on note souvent les accords par leur fondamentale en majuscule pour les accords majeurs et en minuscule pour les mineurs : <em>Do</em>, <em>la</em>, <em>Sol</em>, <em>ré</em>, etc.</p>
+    `
+  },
+
+  'accords-septieme': {
+    chapter: 'chords',
+    title: 'Les accords de septième',
+    sub: 'Ajouter une quatrième note',
+    content: `
+      <p>Un <span class="note-name">accord de septième</span> est une triade à laquelle on ajoute une quatrième note : la <em>septième</em>. Ces accords jouent un rôle central dans le jazz, la pop et la musique classique tardive.</p>
+
+      <h3>Les cinq types principaux</h3>
+
+      <p><strong>Septième de dominante (V<sup>7</sup>)</strong> — triade majeure + septième mineure. C'est l'accord le plus tonal, qui appelle naturellement la résolution sur la tonique.<br>
+      Exemple : sol — si — ré — fa</p>
+
+      <p><strong>Septième majeure (M7)</strong> — triade majeure + septième majeure. Sonorité riche, jazzy, suspendue.<br>
+      Exemple : do — mi — sol — si</p>
+
+      <p><strong>Septième mineure (m7)</strong> — triade mineure + septième mineure. Sonorité douce, fréquente dans la pop et le jazz.<br>
+      Exemple : ré — fa — la — do</p>
+
+      <p><strong>Septième mineure ½ diminuée (ø7)</strong> — triade diminuée + septième mineure. Sonorité ambiguë, fréquente en musique modale.<br>
+      Exemple : si — ré — fa — la</p>
+
+      <p><strong>Septième diminuée (°7)</strong> — triade diminuée + septième diminuée. Quatre notes empilées en tierces mineures, créant une tension extrême.<br>
+      Exemple : si — ré — fa — la♭</p>
+
+      <p class="pull-quote">L'accord de septième de dominante est le moteur harmonique de la musique tonale occidentale.</p>
+    `
+  }
+};
+
+const CHAPTERS = {
+  basics: ['portee', 'durees', 'mesures', 'alterations'],
+  scales: ['gamme-majeure', 'gammes-mineures', 'armures'],
+  intervals: ['intervalles-base'],
+  chords: ['accords-base', 'accords-septieme']
+};
+
+function buildLessonsList() {
+  for (const [chapter, ids] of Object.entries(CHAPTERS)) {
+    const grid = document.getElementById(chapter + '-grid');
+    if (!grid) continue;
+    grid.innerHTML = ids.map(id => {
+      const l = LESSONS[id];
+      return `<div class="lesson-card" onclick="openLesson('${id}')">
+        <h4>${l.title}</h4>
+        <p>${l.sub}</p>
+      </div>`;
+    }).join('');
+  }
+}
+
+function openLesson(id) {
+  const l = LESSONS[id];
+  if (!l) return;
+  document.getElementById('lessons-list').style.display = 'none';
+  document.getElementById('lesson-detail').style.display = 'block';
+  document.getElementById('lesson-content').innerHTML = `
+    <h2>${l.title}</h2>
+    <p class="lesson-sub">${l.sub}</p>
+    ${l.content}
+  `;
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+function showLessonsList() {
+  document.getElementById('lessons-list').style.display = 'block';
+  document.getElementById('lesson-detail').style.display = 'none';
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   EXERCICES
+   ═══════════════════════════════════════════════════════════════ */
+
+let currentExercise = null;
+let exScore = {correct: 0, total: 0};
+let currentAnswer = null;
+
+const EX_DATA = {
+  'notes-treble': {
+    title: 'Identifier les notes — Clé de sol',
+    instructions: 'Quel est le nom de la note affichée ?',
+    generate: () => {
+      const notes = Object.keys(TREBLE_POSITIONS);
+      const key = notes[Math.floor(Math.random() * notes.length)];
+      const noteName = key.replace(/[0-9]/g, '');
+      const step = TREBLE_POSITIONS[key];
+      return {
+        display: renderStaff(step, 'treble', null, {width: 320, height: 180}),
+        answer: noteName,
+        options: NOTES_FR
+      };
+    }
+  },
+  'notes-bass': {
+    title: 'Identifier les notes — Clé de fa',
+    instructions: 'Quel est le nom de la note affichée ?',
+    generate: () => {
+      const notes = Object.keys(BASS_POSITIONS);
+      const key = notes[Math.floor(Math.random() * notes.length)];
+      const noteName = key.replace(/[0-9]/g, '');
+      const step = BASS_POSITIONS[key];
+      return {
+        display: renderStaff(step, 'bass', null, {width: 320, height: 180}),
+        answer: noteName,
+        options: NOTES_FR
+      };
+    }
+  },
+  'intervals': {
+    title: 'Reconnaître les intervalles',
+    instructions: 'Quel est l\'intervalle entre les deux notes ?',
+    generate: () => {
+      const intervalNames = ['Seconde', 'Tierce', 'Quarte', 'Quinte', 'Sixte', 'Septième', 'Octave'];
+      const intIdx = Math.floor(Math.random() * intervalNames.length);
+      const interval = intIdx + 1; // 1=2nd, 2=3rd...
+      // Start on a random treble position
+      const startNotes = ['do4','ré4','mi4','fa4','sol4'];
+      const startKey = startNotes[Math.floor(Math.random() * startNotes.length)];
+      const startStep = TREBLE_POSITIONS[startKey];
+      const endStep = startStep + interval;
+      return {
+        display: renderStaff(startStep, 'treble', null, {
+          width: 360, height: 180,
+          extraNotes: [{step: endStep, x: 220}]
+        }),
+        answer: intervalNames[intIdx],
+        options: intervalNames
+      };
+    }
+  },
+  'keysig': {
+    title: 'Identifier les armures',
+    instructions: 'Quelle est la tonalité majeure correspondant à cette armure ?',
+    generate: () => {
+      // Position of sharps in treble clef (in step terms)
+      const sharpSteps = [8, 5, 9, 6, 3, 7, 4]; // fa do sol ré la mi si
+      const flatSteps = [4, 7, 3, 6, 2, 5, 1];  // si mi la ré sol do fa
+      const sharpKeys = ['Sol', 'Ré', 'La', 'Mi', 'Si', 'Fa♯', 'Do♯'];
+      const flatKeys = ['Fa', 'Si♭', 'Mi♭', 'La♭', 'Ré♭', 'Sol♭', 'Do♭'];
+
+      const useSharp = Math.random() < 0.5;
+      const num = Math.floor(Math.random() * 6) + 1; // 1 to 6 accidentals
+      const keySig = [];
+      if (useSharp) {
+        for (let i = 0; i < num; i++) keySig.push({step: sharpSteps[i], type: 'sharp'});
+      } else {
+        for (let i = 0; i < num; i++) keySig.push({step: flatSteps[i], type: 'flat'});
+      }
+      const answer = useSharp ? sharpKeys[num - 1] : flatKeys[num - 1];
+      // Build options: 4 random keys including the answer
+      const allKeys = ['Do', ...sharpKeys, ...flatKeys];
+      const wrongs = allKeys.filter(k => k !== answer).sort(() => Math.random() - 0.5).slice(0, 3);
+      const options = [...wrongs, answer].sort(() => Math.random() - 0.5);
+      return {
+        display: renderStaff(null, 'treble', null, {width: 320, height: 160, keySig}),
+        answer,
+        options
+      };
+    }
+  }
+};
+
+function startExercise(id) {
+  currentExercise = id;
+  exScore = {correct: 0, total: 0};
+  document.getElementById('exercises-menu').style.display = 'none';
+  document.getElementById('exercise-active').style.display = 'block';
+  document.getElementById('ex-title').textContent = EX_DATA[id].title;
+  document.getElementById('ex-instructions').textContent = EX_DATA[id].instructions;
+  updateScore();
+  nextQuestion();
+}
+
+function endExercise() {
+  document.getElementById('exercises-menu').style.display = 'block';
+  document.getElementById('exercise-active').style.display = 'none';
+  currentExercise = null;
+}
+
+function updateScore() {
+  document.getElementById('score-correct').textContent = exScore.correct;
+  document.getElementById('score-total').textContent = exScore.total;
+}
+
+function nextQuestion() {
+  const ex = EX_DATA[currentExercise];
+  const q = ex.generate();
+  currentAnswer = q.answer;
+  document.getElementById('ex-display').innerHTML = q.display;
+  document.getElementById('ex-feedback').textContent = '';
+  document.getElementById('ex-feedback').className = 'feedback-msg';
+
+  const answersDiv = document.getElementById('ex-answers');
+  const cols = q.options.length <= 4 ? 'repeat(' + q.options.length + ', 1fr)' : (q.options.length <= 7 ? 'repeat(7, 1fr)' : 'repeat(7, 1fr)');
+  answersDiv.innerHTML = `<div class="answer-grid" style="grid-template-columns: ${cols};">
+    ${q.options.map(opt => `<button class="answer-btn" onclick="checkAnswer('${opt.replace(/'/g, "\\'")}', this)">${opt}</button>`).join('')}
+  </div>`;
+}
+
+function checkAnswer(answer, btn) {
+  const fb = document.getElementById('ex-feedback');
+  exScore.total++;
+  document.querySelectorAll('.answer-btn').forEach(b => b.disabled = true);
+  if (answer === currentAnswer) {
+    exScore.correct++;
+    btn.classList.add('correct');
+    fb.textContent = '✓ Bravo, c\'est exact !';
+    fb.className = 'feedback-msg good';
+  } else {
+    btn.classList.add('wrong');
+    document.querySelectorAll('.answer-btn').forEach(b => {
+      if (b.textContent === currentAnswer) b.classList.add('correct');
+    });
+    fb.textContent = '✗ La réponse était : ' + currentAnswer;
+    fb.className = 'feedback-msg bad';
+  }
+  updateScore();
+  setTimeout(() => { if (currentExercise) nextQuestion(); }, 1600);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   PIANO
+   ═══════════════════════════════════════════════════════════════ */
+
+let pianoOctave = 4;
+let showLabels = true;
+
+const PIANO_KEYS = [
+  // 2 octaves of keys
+  {note: 'do', midi: 60, black: false, key: 'q'},
+  {note: 'do♯', midi: 61, black: true, key: '2'},
+  {note: 'ré', midi: 62, black: false, key: 's'},
+  {note: 'ré♯', midi: 63, black: true, key: '3'},
+  {note: 'mi', midi: 64, black: false, key: 'd'},
+  {note: 'fa', midi: 65, black: false, key: 'f'},
+  {note: 'fa♯', midi: 66, black: true, key: '5'},
+  {note: 'sol', midi: 67, black: false, key: 'g'},
+  {note: 'sol♯', midi: 68, black: true, key: '6'},
+  {note: 'la', midi: 69, black: false, key: 'h'},
+  {note: 'la♯', midi: 70, black: true, key: '7'},
+  {note: 'si', midi: 71, black: false, key: 'j'},
+  {note: 'do', midi: 72, black: false, key: 'k'},
+  {note: 'do♯', midi: 73, black: true, key: '9'},
+  {note: 'ré', midi: 74, black: false, key: 'l'},
+  {note: 'ré♯', midi: 75, black: true, key: '0'},
+  {note: 'mi', midi: 76, black: false, key: 'm'},
+];
+
+function buildPiano() {
+  const piano = document.getElementById('piano');
+  const whites = PIANO_KEYS.filter(k => !k.black);
+  const blacks = PIANO_KEYS.filter(k => k.black);
+
+  let html = '';
+  whites.forEach((k, i) => {
+    const adjustedMidi = k.midi + (pianoOctave - 4) * 12;
+    html += `<div class="white-key" data-midi="${adjustedMidi}" data-key="${k.key}" onmousedown="hitKey(${adjustedMidi}, this)">
+      <span class="key-label" style="${showLabels ? '' : 'opacity:0;'}">${k.note}</span>
+    </div>`;
+  });
+
+  // black keys positioned absolutely
+  // White keys: do(0), ré(1), mi(2), fa(3), sol(4), la(5), si(6), do(7), ré(8), mi(9)
+  // Black after: do# (between 0-1), ré# (1-2), fa# (3-4), sol# (4-5), la# (5-6), do# (7-8), ré# (8-9)
+  const blackPositions = [
+    {idx: 0, note: 'do♯', midi: 61, key: '2'},
+    {idx: 1, note: 'ré♯', midi: 63, key: '3'},
+    {idx: 3, note: 'fa♯', midi: 66, key: '5'},
+    {idx: 4, note: 'sol♯', midi: 68, key: '6'},
+    {idx: 5, note: 'la♯', midi: 70, key: '7'},
+    {idx: 7, note: 'do♯', midi: 73, key: '9'},
+    {idx: 8, note: 'ré♯', midi: 75, key: '0'}
+  ];
+
+  html += '<div class="black-keys">';
+  const whiteCount = whites.length;
+  blackPositions.forEach(b => {
+    const leftPercent = ((b.idx + 1) / whiteCount) * 100 - 4;
+    const adjustedMidi = b.midi + (pianoOctave - 4) * 12;
+    html += `<div class="black-key" data-midi="${adjustedMidi}" data-key="${b.key}" style="left: ${leftPercent}%;" onmousedown="hitKey(${adjustedMidi}, this)">
+      <span class="key-label" style="${showLabels ? '' : 'opacity:0;'}">${b.note}</span>
+    </div>`;
+  });
+  html += '</div>';
+
+  piano.innerHTML = html;
+}
+
+function hitKey(midi, el) {
+  getAudio();
+  if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+  playTone(midi, 0.8);
+  el.classList.add('active');
+  setTimeout(() => el.classList.remove('active'), 200);
+}
+
+function toggleLabels() {
+  showLabels = !showLabels;
+  document.getElementById('toggle-labels').textContent = showLabels ? 'Afficher' : 'Masquer';
+  document.getElementById('toggle-labels').classList.toggle('active', showLabels);
+  document.querySelectorAll('.key-label').forEach(l => l.style.opacity = showLabels ? '1' : '0');
+}
+
+function changeOctave(delta) {
+  pianoOctave = Math.max(2, Math.min(6, pianoOctave + delta));
+  document.getElementById('octave-display').textContent = pianoOctave;
+  buildPiano();
+}
+
+// Keyboard input
+document.addEventListener('keydown', (e) => {
+  if (e.repeat) return;
+  const target = document.querySelector(`[data-key="${e.key.toLowerCase()}"]`);
+  if (target) hitKey(parseInt(target.dataset.midi), target);
+});
+
+/* ═══════════════════════════════════════════════════════════════
+   GENERATEUR DE GAMMES
+   ═══════════════════════════════════════════════════════════════ */
+
+const SCALE_PATTERNS = {
+  major:       [0, 2, 4, 5, 7, 9, 11, 12],
+  minor:       [0, 2, 3, 5, 7, 8, 10, 12],
+  harmonic:    [0, 2, 3, 5, 7, 8, 11, 12],
+  melodic:     [0, 2, 3, 5, 7, 9, 11, 12],
+  dorian:      [0, 2, 3, 5, 7, 9, 10, 12],
+  phrygian:    [0, 1, 3, 5, 7, 8, 10, 12],
+  lydian:      [0, 2, 4, 6, 7, 9, 11, 12],
+  mixolydian:  [0, 2, 4, 5, 7, 9, 10, 12]
+};
+
+// Use flats for tonalities containing flats, sharps otherwise
+const FLAT_KEYS = new Set([5, 10, 3, 8, 1]); // Fa, Si♭, Mi♭, La♭, Ré♭
+function noteName(semi, useFlats) {
+  semi = ((semi % 12) + 12) % 12;
+  return useFlats ? NOTES_FLATS[semi] : NOTES_FULL[semi];
+}
+
+function buildScale() {
+  const root = parseInt(document.getElementById('scale-root').value);
+  const type = document.getElementById('scale-type').value;
+  const pattern = SCALE_PATTERNS[type];
+  const useFlats = FLAT_KEYS.has(root) || type !== 'major';
+  // For non-major modes starting on a flat-prone root, still use flats heuristically:
+  const effFlats = type === 'major' ? FLAT_KEYS.has(root) : (root % 2 === 1 && (root === 1 || root === 3 || root === 8 || root === 10));
+
+  const out = document.getElementById('scale-output');
+  out.innerHTML = pattern.slice(0, 8).map((semi, i) => {
+    const cls = (i === 0 || i === 7) ? 'scale-note root' : 'scale-note';
+    return `<div class="${cls}">${noteName(root + semi, effFlats)}</div>`;
+  }).join('');
+}
+
+function playScale() {
+  const root = parseInt(document.getElementById('scale-root').value);
+  const type = document.getElementById('scale-type').value;
+  const pattern = SCALE_PATTERNS[type];
+  getAudio();
+  if (audioCtx && audioCtx.state === 'suspended') audioCtx.resume();
+  pattern.forEach((semi, i) => {
+    playTone(60 + root + semi, 0.5, i * 0.35);
+  });
+}
+
+document.getElementById('scale-root').addEventListener('change', buildScale);
+document.getElementById('scale-type').addEventListener('change', buildScale);
+
+/* ═══════════════════════════════════════════════════════════════
+   CALCULATEUR D'INTERVALLES
+   ═══════════════════════════════════════════════════════════════ */
+
+function calcInterval() {
+  const n1 = parseInt(document.getElementById('int-n1').value);
+  const n2 = parseInt(document.getElementById('int-n2').value);
+
+  let semitones = n2 - n1;
+  if (semitones < 0) semitones += 12;
+
+  // Map semitone count to interval names (assuming diatonic from natural notes)
+  // Note name indices: do=0, ré=1, mi=2, fa=3, sol=4, la=5, si=6
+  const noteOrder = {0: 0, 2: 1, 4: 2, 5: 3, 7: 4, 9: 5, 11: 6};
+  const idx1 = noteOrder[n1];
+  const idx2 = noteOrder[n2];
+  let nameDiff = idx2 - idx1;
+  if (nameDiff < 0) nameDiff += 7;
+
+  const quantityNames = ['Unisson', 'Seconde', 'Tierce', 'Quarte', 'Quinte', 'Sixte', 'Septième'];
+  const quantity = quantityNames[nameDiff];
+
+  // Quality based on semitones for each quantity
+  const expected = {
+    0: {name: 'juste', semi: [0]},
+    1: {minor: 1, major: 2},
+    2: {minor: 3, major: 4},
+    3: {name: 'juste', semi: [5], aug: 6},
+    4: {name: 'juste', semi: [7], dim: 6},
+    5: {minor: 8, major: 9},
+    6: {minor: 10, major: 11}
+  };
+
+  let quality = '';
+  const e = expected[nameDiff];
+  if (e.name) {
+    if (semitones === e.semi[0]) quality = 'juste';
+    else if (e.aug && semitones === e.aug) quality = 'augmentée';
+    else if (e.dim && semitones === e.dim) quality = 'diminuée';
+    else quality = `(${semitones} demi-tons)`;
+  } else {
+    if (semitones === e.major) quality = 'majeure';
+    else if (semitones === e.minor) quality = 'mineure';
+    else if (semitones === e.minor - 1) quality = 'diminuée';
+    else if (semitones === e.major + 1) quality = 'augmentée';
+    else quality = `(${semitones} demi-tons)`;
+  }
+
+  const noteNames = {0:'do', 2:'ré', 4:'mi', 5:'fa', 7:'sol', 9:'la', 11:'si'};
+  document.getElementById('interval-result').innerHTML =
+    `De <em>${noteNames[n1]}</em> à <em>${noteNames[n2]}</em> :<br>
+    <span style="color: var(--burgundy); font-weight: 600;">${quantity} ${quality}</span>
+    <span style="display: block; font-size: 0.95rem; color: var(--ink-soft); margin-top: 0.3rem;">(${semitones} demi-ton${semitones > 1 ? 's' : ''})</span>`;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   INITIALISATION
+   ═══════════════════════════════════════════════════════════════ */
+
+buildLessonsList();
+buildPiano();
+buildScale();
+calcInterval();
+
+</script>
+</body>
+</html>
