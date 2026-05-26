@@ -6,12 +6,12 @@
 
 <!-- ─────────── SEO essentials ─────────── -->
 <title>Solfège &amp; Harmonie — Théorie musicale à votre rythme</title>
-<meta name="description" content="Apprenez la théorie musicale en français : leçons illustrées, exercices interactifs et outils (piano virtuel, gammes, intervalles). Avec les noms français des notes — do, ré, mi, fa, sol, la, si.">
+<meta name="description" content="Apprenez la théorie musicale à votre rythme : leçons illustrées, exercices interactifs qui suivent votre progression, et outils musicaux (piano virtuel, gammes, intervalles). Notes en français : do, ré, mi, fa, sol, la, si.">
 <meta name="keywords" content="solfège, théorie musicale, leçons musique, exercices solfège, piano virtuel, gamme majeure, intervalles musique, armures, clé de sol, clé de fa, do ré mi fa sol la si, apprendre la musique, cours de solfège gratuit">
 <meta name="author" content="Solfège &amp; Harmonie">
 <meta name="robots" content="index, follow">
 <meta name="language" content="French">
-<link rel="canonical" href="https://jdowwwg.github.io/solfege-harmonie//">
+<link rel="canonical" href="https://VOTRE-DOMAINE.example/">
 
 <!-- ─────────── Open Graph (Facebook, LinkedIn, WhatsApp, Messenger…) ─────────── -->
 <meta property="og:type" content="website">
@@ -19,8 +19,8 @@
 <meta property="og:site_name" content="Solfège &amp; Harmonie">
 <meta property="og:title" content="Solfège &amp; Harmonie — Théorie musicale à votre rythme">
 <meta property="og:description" content="Leçons, exercices et outils pour apprendre la musique en français. Avec piano virtuel et générateur de gammes.">
-<meta property="og:url" content="https://jdowwwg.github.io/solfege-harmonie//">
-<meta property="og:image" content="https://jdowwwg.github.io/solfege-harmonie//og-image.png">
+<meta property="og:url" content="https://VOTRE-DOMAINE.example/">
+<meta property="og:image" content="https://VOTRE-DOMAINE.example/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Solfège &amp; Harmonie — Théorie musicale à votre rythme, avec une portée musicale et les notes do, ré, mi, fa, sol, la, si">
@@ -29,7 +29,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Solfège &amp; Harmonie — Théorie musicale à votre rythme">
 <meta name="twitter:description" content="Leçons, exercices et outils pour apprendre la musique en français.">
-<meta name="twitter:image" content="https://jdowwwg.github.io/solfege-harmonie//og-image.png">
+<meta name="twitter:image" content="https://VOTRE-DOMAINE.example/og-image.png">
 <meta name="twitter:image:alt" content="Solfège &amp; Harmonie — apprentissage de la musique en français">
 
 <!-- ─────────── Theme color (mobile browser chrome) ─────────── -->
@@ -47,8 +47,8 @@
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   "name": "Solfège & Harmonie",
-  "description": "Plateforme d'apprentissage gratuite de la théorie musicale en français : leçons, exercices et outils interactifs.",
-  "url": "https://jdowwwg.github.io/solfege-harmonie//",
+  "description": "Plateforme d'apprentissage gratuite de la théorie musicale à votre rythme : leçons, exercices et outils interactifs.",
+  "url": "https://VOTRE-DOMAINE.example/",
   "inLanguage": "fr",
   "educationalCredentialAwarded": "Connaissances en théorie musicale",
   "teaches": ["Solfège", "Théorie musicale", "Lecture de notes", "Gammes", "Intervalles", "Accords"]
@@ -59,6 +59,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Marcellus&display=swap" rel="stylesheet">
+
 <style>
   :root {
     --paper: #f4ecdc;
@@ -858,6 +859,128 @@
     letter-spacing: 0.4rem;
   }
 
+  /* ─────────── Home rotating quote ─────────── */
+  .home-quote {
+    max-width: 720px;
+    margin: 5rem auto 0;
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    position: relative;
+  }
+
+  .home-quote::before {
+    content: '\201C';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5rem;
+    color: var(--gold);
+    background: var(--paper);
+    padding: 0 1.2rem;
+    line-height: 1;
+    height: 0.6em;
+    overflow: hidden;
+  }
+
+  .home-quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+    min-height: 2.4em;
+    transition: opacity 0.5s ease;
+  }
+
+  .home-quote-attr {
+    font-family: 'Marcellus', serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+    transition: opacity 0.5s ease;
+  }
+
+  .home-quote-refresh {
+    background: none;
+    border: 1px solid var(--rule);
+    color: var(--ink-soft);
+    padding: 0.4rem 1rem;
+    margin-top: 1.5rem;
+    font-family: 'Marcellus', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+
+  .home-quote-refresh:hover {
+    border-color: var(--gold);
+    color: var(--burgundy);
+  }
+
+  /* ─────────── Fun fact box (in lessons) ─────────── */
+  .fun-fact {
+    margin: 2.5rem 0;
+    padding: 1.5rem 1.8rem 1.5rem 2.2rem;
+    background: linear-gradient(to right, rgba(90, 107, 74, 0.10), rgba(90, 107, 74, 0.03));
+    border-left: 3px solid var(--sage);
+    position: relative;
+  }
+
+  .fun-fact-label {
+    font-family: 'Marcellus', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.28em;
+    color: var(--sage);
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+
+  .fun-fact-label::before {
+    content: '✦ ';
+    color: var(--gold);
+  }
+
+  .fun-fact p {
+    font-style: italic;
+    color: var(--ink);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  /* ─────────── In-lesson quote ─────────── */
+  .lesson-quote {
+    margin: 2.5rem 0;
+    padding: 1.5rem 2rem;
+    border-left: 2px solid var(--gold);
+    background: linear-gradient(to right, rgba(168, 136, 74, 0.06), transparent);
+  }
+
+  .lesson-quote-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--burgundy);
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
+  }
+
+  .lesson-quote-attr {
+    font-family: 'Marcellus', serif;
+    font-size: 0.78rem;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
   @media (max-width: 768px) {
     header { padding: 1.5rem 1.2rem; flex-direction: column; align-items: flex-start; }
     nav { gap: 1.2rem; flex-wrap: wrap; }
@@ -874,7 +997,7 @@
 <header>
   <div class="brand" onclick="goHome()">
     <div class="brand-mark">Solfège <span class="ampersand">&amp;</span> Harmonie</div>
-    <div class="brand-tagline">Théorie musicale en français</div>
+    <div class="brand-tagline">Théorie musicale interactive</div>
   </div>
   <nav>
     <button id="nav-home" class="active" onclick="navigate('home')">Accueil</button>
@@ -891,7 +1014,7 @@
   <div class="hero">
     <div class="hero-eyebrow">Apprendre · Pratiquer · Maîtriser</div>
     <h1>La <em>théorie musicale</em><br>à votre rythme</h1>
-    <p class="hero-lead">Un parcours complet pour apprendre la musique, avec les noms français des notes — do, ré, mi, fa, sol, la, si — depuis les bases jusqu'aux accords et progressions harmoniques.</p>
+    <p class="hero-lead">Explorez la musique par la pratique. Leçons illustrées, exercices qui suivent votre progression, outils que vous manipulez — chacun avance à son tempo, sans pression.</p>
     <div class="hero-flourish">𝄞 ♪ ♩ ♫ ♬</div>
   </div>
 
@@ -914,6 +1037,12 @@
       <h3>Les Outils</h3>
       <p>Un piano virtuel, un générateur de gammes, un calculateur d'intervalles à votre disposition.</p>
     </div>
+  </div>
+
+  <div class="home-quote">
+    <p class="home-quote-text" id="hq-text">&nbsp;</p>
+    <p class="home-quote-attr" id="hq-attr">&nbsp;</p>
+    <button class="home-quote-refresh" onclick="rotateQuote()">Une autre ↻</button>
   </div>
 </section>
 
@@ -1103,7 +1232,7 @@
 
 <footer>
   <div class="flourish">✦ ❦ ✦</div>
-  <div>Solfège &amp; Harmonie — un compagnon d'apprentissage musical en français</div>
+  <div>Solfège &amp; Harmonie — un compagnon d'apprentissage musical interactif</div>
   <div style="margin-top: 0.5rem; font-size: 0.85rem;">do · ré · mi · fa · sol · la · si</div>
 </footer>
 
@@ -1115,6 +1244,20 @@
 const NOTES_FR = ['do', 'ré', 'mi', 'fa', 'sol', 'la', 'si'];
 const NOTES_FULL = ['do', 'do♯', 'ré', 'ré♯', 'mi', 'fa', 'fa♯', 'sol', 'sol♯', 'la', 'la♯', 'si'];
 const NOTES_FLATS = ['do', 'ré♭', 'ré', 'mi♭', 'mi', 'fa', 'sol♭', 'sol', 'la♭', 'la', 'si♭', 'si'];
+
+/* ─── Citations de grands musiciens (toutes du domaine public) ─── */
+const QUOTES = [
+  { text: "Pour jouer une fausse note, c'est peu ; jouer sans passion est inexcusable.", author: "Ludwig van Beethoven" },
+  { text: "Il faut être travailleur. Quiconque travaillera autant que moi réussira tout autant.", author: "Jean-Sébastien Bach" },
+  { text: "La simplicité est la consécration finale de l'art.", author: "Frédéric Chopin" },
+  { text: "M. Wagner a de beaux moments, mais de mauvais quarts d'heure.", author: "Gioachino Rossini" },
+  { text: "Le temps est un grand maître ; il règle bien des choses.", author: "Hector Berlioz" },
+  { text: "La musique est l'incarnation poétique de la pensée.", author: "Franz Liszt" },
+  { text: "La musique commence là où s'arrête le pouvoir des mots.", author: "Heinrich Heine" },
+  { text: "La musique est un exercice caché d'arithmétique, l'âme ignorant qu'elle compte.", author: "Gottfried Wilhelm Leibniz" },
+  { text: "Si quelqu'un n'a pas été insulté, je m'en excuse.", author: "Johannes Brahms (en quittant une soirée)" },
+  { text: "Bach est un astronome qui découvre les plus merveilleuses étoiles.", author: "Frédéric Chopin, sur Bach" }
+];
 
 /* ═══════════════════════════════════════════════════════════════
    NAVIGATION
@@ -1131,6 +1274,27 @@ function navigate(view) {
 }
 
 function goHome() { navigate('home'); }
+
+/* ─── Rotation des citations sur l'accueil ─── */
+let lastQuoteIdx = -1;
+function rotateQuote() {
+  const txt = document.getElementById('hq-text');
+  const att = document.getElementById('hq-attr');
+  if (!txt || !att) return;
+  let idx;
+  do { idx = Math.floor(Math.random() * QUOTES.length); }
+  while (idx === lastQuoteIdx && QUOTES.length > 1);
+  lastQuoteIdx = idx;
+  // Fade transition
+  txt.style.opacity = '0';
+  att.style.opacity = '0';
+  setTimeout(() => {
+    txt.textContent = '« ' + QUOTES[idx].text + ' »';
+    att.textContent = '— ' + QUOTES[idx].author;
+    txt.style.opacity = '1';
+    att.style.opacity = '1';
+  }, 300);
+}
 
 /* ═══════════════════════════════════════════════════════════════
    AUDIO — Web Audio API
@@ -1234,16 +1398,11 @@ function renderStaff(noteStep, clef = 'treble', accidental = null, options = {})
       svg += `<line x1="${noteX - 12}" y1="${stepY(-2)}" x2="${noteX + 12}" y2="${stepY(-2)}" stroke="#1a1410" stroke-width="1"/>`;
     }
 
-    // accidental
+    // accidental: render via SVG-path glyph centered on the note's staff line
     if (accidental) {
-      const ax = noteX - 18;
-      if (accidental === 'sharp') {
-        svg += `<text x="${ax}" y="${y + 5}" font-size="22" font-family="serif" fill="#1a1410" text-anchor="middle">♯</text>`;
-      } else if (accidental === 'flat') {
-        svg += `<text x="${ax}" y="${y + 6}" font-size="24" font-family="serif" fill="#1a1410" text-anchor="middle">♭</text>`;
-      } else if (accidental === 'natural') {
-        svg += `<text x="${ax}" y="${y + 5}" font-size="22" font-family="serif" fill="#1a1410" text-anchor="middle">♮</text>`;
-      }
+      const ax = noteX - lineSp * 1.4;
+      const name = accidental === 'sharp' ? 'sharp' : accidental === 'flat' ? 'flat' : accidental === 'natural' ? 'natural' : null;
+      if (name) svg += renderGlyph(name, ax, y, lineSp);
     }
 
     // note head (oval)
@@ -1290,12 +1449,10 @@ function renderStaff(noteStep, clef = 'treble', accidental = null, options = {})
   if (options.keySig) {
     let kx = 65;
     for (const acc of options.keySig) {
-      const y = stepY(acc.step);
-      const symbol = acc.type === 'sharp' ? '♯' : '♭';
-      const offset = acc.type === 'sharp' ? 5 : 6;
-      const size = acc.type === 'sharp' ? 22 : 24;
-      svg += `<text x="${kx}" y="${y + offset}" font-size="${size}" font-family="serif" fill="#1a1410" text-anchor="middle">${symbol}</text>`;
-      kx += 10;
+      const ky = stepY(acc.step);
+      const name = acc.type === 'sharp' ? 'sharp' : 'flat';
+      svg += renderGlyph(name, kx, ky, lineSp);
+      kx += acc.type === 'sharp' ? lineSp * 0.85 : lineSp * 0.9;
     }
   }
 
@@ -1303,14 +1460,43 @@ function renderStaff(noteStep, clef = 'treble', accidental = null, options = {})
   return svg;
 }
 
+/* ─── Music notation glyphs — outlines extracted from FreeSerif (GPL+FE),
+        rendered as SVG paths so the layout is identical on every browser. */
+const MG = {
+  treble: {p:"M434 2Q464 -103 464 -170Q464 -223 427.0 -257.0Q390 -291 337 -291Q287 -291 250.0 -261.5Q213 -232 213 -190Q213 -160 233.5 -133.5Q254 -107 283.5 -107.0Q313 -107 331.5 -128.5Q350 -150 350 -178Q350 -240 280 -240Q298 -268 338 -268Q353 -268 368.5 -263.5Q384 -259 401.0 -248.0Q418 -237 428.5 -213.5Q439 -190 439 -157Q439 -136 411 -6Q389 -12 356 -12Q259 -12 189.5 60.0Q120 132 120 232Q120 267 131.5 303.0Q143 339 157.5 366.5Q172 394 200.5 428.5Q229 463 248.5 483.5Q268 504 303 539Q280 621 280 689Q280 779 313.0 839.5Q346 900 379 900Q389 900 401.5 887.0Q414 874 426.0 851.0Q438 828 446.5 790.5Q455 753 455 710Q455 551 342 447L368 329Q384 332 397 332Q458 332 500.0 282.5Q542 233 542 162Q542 44 434 2ZM426 746Q426 801 394 801Q358 801 333.0 748.0Q308 695 308 630Q308 588 321 557Q359 580 392.5 639.5Q426 699 426 746ZM498 128Q498 183 466.0 216.0Q434 249 383 249L428 23Q498 52 498 128ZM407 17 361 247Q334 241 311.5 214.0Q289 187 289 158Q289 143 295.0 128.5Q301 114 309.5 104.0Q318 94 327.0 86.0Q336 78 342.0 74.5Q348 71 348 71L340 66Q307 75 277.5 106.0Q248 137 248 184Q248 231 277.5 270.5Q307 310 343 323L325 430Q168 299 168 177Q168 104 223.0 55.0Q278 6 348 6Q365 6 407 17Z",xC:331.5,yA:168,k:1.47},  // spiral center on G line
+  bass: {p:"M564 704Q582 704 594.5 691.0Q607 678 607.0 661.0Q607 644 593.0 631.0Q579 618 563 618Q521 618 521 663Q521 681 534.0 692.5Q547 704 564 704ZM607 469Q607 450 594.0 437.0Q581 424 564 424Q521 424 521 469Q521 485 533.5 498.0Q546 511 564.0 511.0Q582 511 594.5 497.0Q607 483 607 469ZM285 757Q366 757 421.0 701.5Q476 646 476 569Q476 531 465.5 495.0Q455 459 432.0 426.5Q409 394 386.0 367.0Q363 340 326.0 313.0Q289 286 264.0 267.5Q239 249 196.5 226.0Q154 203 135.5 193.5Q117 184 80 166L75 182Q76 183 102.0 200.0Q128 217 144.0 227.5Q160 238 191.5 263.0Q223 288 244.0 309.5Q265 331 291.5 363.5Q318 396 334.0 427.0Q350 458 361.5 498.0Q373 538 373 578Q373 735 262 735Q225 735 199.0 725.5Q173 716 161.5 702.0Q150 688 145.0 677.5Q140 667 140 659Q140 644 160 644Q168 644 179.0 647.5Q190 651 194 651Q221 651 239.0 634.0Q257 617 257 592Q257 563 235.0 544.0Q213 525 183 525Q144 525 119.0 548.0Q94 571 94 607Q94 673 150.5 715.0Q207 757 285 757Z",xC:341.0,yA:564,k:1.27},  // between the two dots = F line
+  sharp: {p:"M365 24 319 6V-193L275 -209V-10L138 -63V-262L94 -279V-80L50 -96V0L94 17V262L50 245V341L94 358V589L138 606V376L275 429V659L319 675V446L365 464V366L319 348V104L365 122ZM275 88V332L138 279V34Z",xC:207.5,yA:198},  // crossbar center
+  flat: {p:"M222 441Q275 441 302.0 408.0Q329 375 329 317Q329 273 299.5 234.0Q270 195 192.5 117.0Q115 39 56 -34V783L99 802V402Q148 441 222 441ZM232 308Q232 373 183 373Q159 373 134.5 358.5Q110 344 99 319V87Q159 155 195.5 214.5Q232 274 232 308Z",xC:192.5,yA:200},  // round loop center
+  natural: {p:"M324 -273 280 -290V3L56 -87V656L99 675V344L324 433ZM280 93V328L99 254V19Z",xC:190.0,yA:192},  // crossbar center
+  ronde: {p:"M196 190Q265 190 313.0 163.5Q361 137 361 88Q361 41 314.0 15.5Q267 -10 201 -10Q132 -10 85.0 16.0Q38 42 38 93Q38 129 67.5 152.0Q97 175 130.0 182.5Q163 190 196 190ZM142 119Q142 77 161.0 45.0Q180 13 210 13Q256 13 256 63Q256 103 237.5 134.5Q219 166 187 166Q142 166 142 119Z",xC:199.5,yA:91},  // notehead center
+  blanche: {p:"M35 59Q35 111 86.0 151.5Q137 192 194 192Q228 192 253 175V767H275V120Q275 64 226.0 27.0Q177 -10 118 -10Q85 -10 60.0 9.5Q35 29 35 59ZM81 29Q134 29 188.5 74.0Q243 119 243 141Q243 155 231 155Q194 155 129.5 112.5Q65 70 65 42Q65 29 81 29Z",xC:155.0,yA:91},  // notehead center
+  noire: {p:"M38 59Q38 111 89.0 151.5Q140 192 197 192Q230 192 256 175V767H278V120Q278 64 229.0 27.0Q180 -10 121 -10Q88 -10 63.0 9.5Q38 29 38 59Z",xC:158.0,yA:91},  // notehead center
+  croche: {p:"M35 59Q35 111 86.0 151.5Q137 192 194 192Q228 192 253 175V767H274Q283 709 307.0 663.0Q331 617 358.5 587.5Q386 558 412.0 529.5Q438 501 455.5 462.5Q473 424 473 376Q473 291 402 177H379Q384 188 395.5 212.0Q407 236 411.0 245.0Q415 254 422.0 272.0Q429 290 431.5 301.5Q434 313 436.5 329.0Q439 345 439 361Q439 428 389.5 486.0Q340 544 275 548V120Q275 64 226.0 27.0Q177 -10 118 -10Q85 -10 60.0 9.5Q35 29 35 59Z",xC:254.0,yA:91},  // notehead center
+  doubleCroche: {p:"M35 59Q35 111 86.0 151.5Q137 192 194 192Q228 192 253 175V767H274Q278 732 299.5 699.5Q321 667 349.0 640.5Q377 614 404.5 586.5Q432 559 451.0 522.5Q470 486 470 445Q470 411 454 376Q473 348 473 302Q473 225 435 162H411Q446 232 446 289Q446 321 430.5 349.0Q415 377 383.5 400.0Q352 423 331.5 435.0Q311 447 275 465V120Q275 64 226.0 27.0Q177 -10 118 -10Q85 -10 60.0 9.5Q35 29 35 59ZM439 428Q439 531 275 620Q275 591 287.0 565.0Q299 539 319.0 518.5Q339 498 360.0 481.0Q381 464 403.0 443.5Q425 423 437 405Q439 421 439 428Z",xC:254.0,yA:91},  // notehead center
+  pause: {p:"M370 548H297V465H84V548H12V572H370Z",xC:191.0,yA:519},  // rectangle center
+  demiPause: {p:"M12.0 382.0H85.0V465.0H298.0V382.0H370.0V358.0H12.0Z",xC:191.0,yA:411},  // rectangle center
+  soupir: {p:"M55 208Q55 242 77.5 260.0Q100 278 130 278Q150 278 178 267L65 415Q145 487 145 544Q145 589 91 658H136L264 502Q181 404 181 356Q181 310 259 217L243 194Q203 217 176 217Q140 217 140.0 173.0Q140 129 179 84L165 62Q55 144 55 208Z",xC:159.5,yA:360},  // visual center
+  demiSoupir: {p:"M136 443Q152 443 175.0 466.5Q198 490 213 511H234L138 166H101L173 426Q126 402 97.0 402.0Q68 402 43.5 422.5Q19 443 19 473Q19 495 35.0 513.5Q51 532 79 532Q106 532 122.0 513.5Q138 495 138 473Q138 458 131 445Q135 443 136 443Z",xC:126.5,yA:349},  // visual center
+  quartSoupir: {p:"M189 443Q205 443 229.0 467.0Q253 491 265 511H287L138 -23H101L173 237Q126 213 97.0 213.0Q68 213 43.5 233.5Q19 254 19 284Q19 306 35.0 324.5Q51 343 79 343Q106 343 122.0 324.5Q138 306 138 284Q138 269 131 256Q135 254 136 254Q155 254 189 291L226 425Q181 402 149 402Q121 402 96.0 422.0Q71 442 71 472Q71 498 88.5 514.5Q106 531 130 531Q155 531 172.5 514.0Q190 497 190 472Q190 457 184 445Q188 443 189 443Z",xC:153.0,yA:254},  // visual center
+};
+
+/* Render a music glyph centered on cx, with its reference anchor at anchorY. */
+function renderGlyph(name, cx, anchorY, lineSp) {
+  const g = MG[name]; if (!g) return '';
+  const s = (lineSp / 250) * (g.k || 1);
+  const tx = cx - g.xC * s;
+  const ty = anchorY + g.yA * s;
+  return `<g transform="translate(${tx},${ty}) scale(${s},${-s})" fill="#1a1410"><path d="${g.p}"/></g>`;
+}
+
 function renderTrebleClef(cx, cy, lineSp) {
-  // Stylized treble clef centered on G line (line 2 from bottom)
-  // Use Unicode but scaled
-  return `<text x="${cx}" y="${cy + lineSp * 1.5}" font-size="${lineSp * 5}" font-family="serif" fill="#1a1410" text-anchor="middle" style="font-weight: 500;">𝄞</text>`;
+  // cy = staff center; G line is one line-spacing below (line 2 from bottom).
+  return renderGlyph('treble', cx, cy + lineSp, lineSp);
 }
 
 function renderBassClef(cx, cy, lineSp) {
-  return `<text x="${cx}" y="${cy - lineSp * 0.5}" font-size="${lineSp * 4}" font-family="serif" fill="#1a1410" text-anchor="middle">𝄢</text>`;
+  // cy = staff center; F line is one line-spacing above (line 4 from bottom).
+  return renderGlyph('bass', cx, cy - lineSp, lineSp);
 }
 
 // Note positions on treble clef (step from bottom line)
@@ -1334,18 +1520,19 @@ const TREBLE_POSITIONS = {
 };
 
 const BASS_POSITIONS = {
-  'sol2': -2,
-  'la2': -1,
-  'si2': 0,
-  'do3': 1,
-  'ré3': 2,
-  'mi3': 3,
-  'fa3': 4,
-  'sol3': 5,
-  'la3': 6,
-  'si3': 7,
-  'do4': 8,
-  'ré4': 9
+  // In bass clef: bottom line=sol2 (step 0), then la2, si2, do3, ré3, mi3, fa3, sol3, la3 (top line=step 8)
+  'sol2': 0,
+  'la2': 1,
+  'si2': 2,
+  'do3': 3,
+  'ré3': 4,
+  'mi3': 5,
+  'fa3': 6,
+  'sol3': 7,
+  'la3': 8,
+  'si3': 9,
+  'do4': 10,
+  'ré4': 11
 };
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1379,7 +1566,7 @@ const LESSONS = {
       <p><span class="note-name">La clé de fa</span> — utilisée pour les notes graves (voix de basse, main gauche du piano, contrebasse). Ses deux points encadrent la quatrième ligne, désignant cette ligne comme étant le <em>fa</em>.</p>
 
       <div class="lesson-figure">
-        ${renderStaff(4, 'bass', null, {width: 280, height: 140})}
+        ${renderStaff(6, 'bass', null, {width: 280, height: 140})}
         <div class="caption">La note <em>fa</em> sur la quatrième ligne (clé de fa)</div>
       </div>
 
@@ -1396,7 +1583,7 @@ const LESSONS = {
             for (let i = 0; i < 5; i++) {
               s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="520" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
             }
-            s += `<text x="35" y="${staffBot - lineSp * 0.5 + 30}" font-size="60" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
+            s += renderGlyph('treble', 35, staffBot - lineSp, lineSp);
             const seq = [{n:'mi', s:0}, {n:'fa', s:1}, {n:'sol', s:2}, {n:'la', s:3}, {n:'si', s:4}, {n:'do', s:5}, {n:'ré', s:6}, {n:'mi', s:7}, {n:'fa', s:8}];
             seq.forEach((note, i) => {
               const x = 110 + i * 45;
@@ -1411,6 +1598,11 @@ const LESSONS = {
       </div>
 
       <p class="pull-quote">Pour mémoriser les lignes : « <em>Mi sol-si Réf-</em>uge », et pour les espaces : « <em>Fa-la-do-mi</em> » se chante naturellement.</p>
+
+      <div class="fun-fact">
+        <span class="fun-fact-label">Le saviez-vous ?</span>
+        <p>Les noms <em>do, ré, mi, fa, sol, la, si</em> ont une origine surprenante : ils proviennent d'un hymne médiéval à saint Jean-Baptiste, composé au XI<sup>e</sup> siècle par le moine italien Guido d'Arezzo. Chaque syllabe est la première de chaque vers : <em>Ut</em> queant laxis, <em>Re</em>sonare fibris, <em>Mi</em>ra gestorum… Le <em>ut</em> initial a été remplacé par <em>do</em> au XVII<sup>e</sup> siècle, plus chantant.</p>
+      </div>
     `
   },
 
@@ -1425,12 +1617,12 @@ const LESSONS = {
 
       <div class="lesson-figure">
         <svg viewBox="0 0 600 100" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
-          <g font-family="serif" font-size="50" fill="#1a1410" text-anchor="middle">
-            <text x="60" y="65">𝅝</text>
-            <text x="180" y="65">𝅗𝅥</text>
-            <text x="300" y="70">𝅘𝅥</text>
-            <text x="420" y="70">𝅘𝅥𝅮</text>
-            <text x="540" y="70">𝅘𝅥𝅯</text>
+          <g>
+            ${renderGlyph('ronde',        60, 70, 14)}
+            ${renderGlyph('blanche',     180, 70, 14)}
+            ${renderGlyph('noire',       300, 70, 14)}
+            ${renderGlyph('croche',      420, 70, 14)}
+            ${renderGlyph('doubleCroche',540, 70, 14)}
           </g>
           <g font-family="serif" font-style="italic" font-size="14" fill="#3a2e22" text-anchor="middle">
             <text x="60" y="95">ronde — 4 temps</text>
@@ -1449,12 +1641,12 @@ const LESSONS = {
 
       <div class="lesson-figure">
         <svg viewBox="0 0 600 100" class="figure-svg" xmlns="http://www.w3.org/2000/svg">
-          <g font-family="serif" font-size="40" fill="#1a1410" text-anchor="middle">
-            <text x="60" y="55">𝄻</text>
-            <text x="180" y="60">𝄼</text>
-            <text x="300" y="60">𝄽</text>
-            <text x="420" y="60">𝄾</text>
-            <text x="540" y="60">𝄿</text>
+          <g>
+            ${renderGlyph('pause',        60, 50, 14)}
+            ${renderGlyph('demiPause',   180, 50, 14)}
+            ${renderGlyph('soupir',      300, 55, 14)}
+            ${renderGlyph('demiSoupir',  420, 55, 14)}
+            ${renderGlyph('quartSoupir', 540, 55, 14)}
           </g>
           <g font-family="serif" font-style="italic" font-size="14" fill="#3a2e22" text-anchor="middle">
             <text x="60" y="90">pause</text>
@@ -1468,6 +1660,11 @@ const LESSONS = {
 
       <h3>Le point d'augmentation</h3>
       <p>Un petit point placé à droite d'une note (ou d'un silence) en augmente la durée de <strong>la moitié</strong> de sa valeur. Ainsi, une blanche pointée vaut trois temps (2 + 1), et une noire pointée vaut un temps et demi (1 + ½).</p>
+
+      <div class="fun-fact">
+        <span class="fun-fact-label">Le saviez-vous ?</span>
+        <p>Le marquage de tempo le plus rapide est <em>prestissimo</em>, à environ 200 battements par minute. À l'opposé, <em>larghissimo</em> descend en dessous de 20 BPM — soit une pulsation toutes les trois secondes. Au-delà de ces extrêmes, l'oreille humaine ne perçoit plus de battement régulier mais une simple succession de notes.</p>
+      </div>
     `
   },
 
@@ -1494,9 +1691,10 @@ const LESSONS = {
             for (let i = 0; i < 5; i++) {
               s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="340" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
             }
-            s += `<text x="40" y="${staffBot - lineSp * 0.5 + 25}" font-size="55" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
-            s += `<text x="85" y="62" font-size="26" font-weight="bold" font-family="serif" fill="#1a1410" text-anchor="middle">4</text>`;
-            s += `<text x="85" y="86" font-size="26" font-weight="bold" font-family="serif" fill="#1a1410" text-anchor="middle">4</text>`;
+            s += renderGlyph('treble', 40, staffBot - lineSp, lineSp);
+// 4/4 time signature: two stacked digits "4" (drawn as paths or text in serif)
+            s += `<text x="85" y="56" font-size="${3 * lineSp}" font-family="Cormorant Garamond, serif" font-weight="600" fill="#1a1410" text-anchor="middle">4</text>`;
+            s += `<text x="85" y="${56 + 2.2 * lineSp}" font-size="${3 * lineSp}" font-family="Cormorant Garamond, serif" font-weight="600" fill="#1a1410" text-anchor="middle">4</text>`;
             s += `<line x1="200" y1="${staffTop}" x2="200" y2="${staffBot}" stroke="#1a1410" stroke-width="1"/>`;
             s += `<line x1="338" y1="${staffTop}" x2="338" y2="${staffBot}" stroke="#1a1410" stroke-width="1"/>`;
             // notes
@@ -1557,6 +1755,11 @@ const LESSONS = {
       <p>Le <span class="note-name">ton</span> équivaut à deux demi-tons. La distance entre <em>do</em> et <em>ré</em> est un ton (car il y a une touche noire entre les deux), mais la distance entre <em>mi</em> et <em>fa</em> n'est qu'un demi-ton (touches adjacentes sans touche noire entre elles).</p>
 
       <p class="pull-quote">Entre <em>mi-fa</em> et <em>si-do</em> : un demi-ton naturel. Partout ailleurs entre notes consécutives : un ton.</p>
+
+      <div class="fun-fact">
+        <span class="fun-fact-label">Le saviez-vous ?</span>
+        <p>Les 12 demi-tons par octave de notre système occidental ne sont pas universels. La musique classique indienne utilise 22 <em>śrutis</em> (micro-intervalles) par octave, la musique arabe traditionnelle compte des quarts de ton, et certains compositeurs contemporains explorent même des divisions à 31, 53 ou 72 notes par octave.</p>
+      </div>
     `
   },
 
@@ -1581,7 +1784,7 @@ const LESSONS = {
             for (let i = 0; i < 5; i++) {
               s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="580" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
             }
-            s += `<text x="40" y="${staffBot - lineSp * 0.5 + 28}" font-size="55" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
+            s += renderGlyph('treble', 40, staffBot - lineSp, lineSp);
             const scale = [
               {n:'do', s:-2}, {n:'ré', s:-1}, {n:'mi', s:0}, {n:'fa', s:1},
               {n:'sol', s:2}, {n:'la', s:3}, {n:'si', s:4}, {n:'do', s:5}
@@ -1627,6 +1830,11 @@ const LESSONS = {
 
       <h3>Construire d'autres gammes majeures</h3>
       <p>Pour construire une gamme majeure à partir de n'importe quelle note, il suffit d'appliquer le schéma <em>ton-ton-demi-ton-ton-ton-ton-demi-ton</em>. Par exemple, la gamme de <em>sol majeur</em> contient un <em>fa♯</em>, et celle de <em>fa majeur</em> contient un <em>si♭</em>.</p>
+
+      <div class="fun-fact">
+        <span class="fun-fact-label">Le saviez-vous ?</span>
+        <p>La note <em>la</em> à 440 Hz n'est devenue la référence mondiale pour accorder les instruments qu'en 1955. Avant cette date, les orchestres pouvaient varier de 415 Hz (baroque) à 466 Hz (certains opéras du XIX<sup>e</sup> siècle). Aujourd'hui encore, les ensembles spécialisés en musique ancienne accordent souvent leur <em>la</em> à 415 Hz pour respecter le son historique.</p>
+      </div>
     `
   },
 
@@ -1711,6 +1919,11 @@ const LESSONS = {
         <li>Mi♭ majeur — 3 bémols</li>
         <li>La♭ majeur — 4 bémols</li>
       </ul>
+
+      <div class="fun-fact">
+        <span class="fun-fact-label">Le saviez-vous ?</span>
+        <p>En théorie, empiler 12 quintes pures devrait ramener exactement à la note de départ après 7 octaves. En pratique, on tombe légèrement à côté : c'est le <em>comma pythagoricien</em>, une petite imperfection mathématique de l'univers sonore. C'est pour la corriger qu'a été inventé le <em>tempérament égal</em> au XVIII<sup>e</sup> siècle, qui répartit habilement l'erreur sur tous les intervalles — au prix d'une légère désaccordage de chacun.</p>
+      </div>
     `
   },
 
@@ -1799,7 +2012,7 @@ const LESSONS = {
             for (let i = 0; i < 5; i++) {
               s += `<line x1="20" y1="${staffTop + i * lineSp}" x2="460" y2="${staffTop + i * lineSp}" stroke="#1a1410"/>`;
             }
-            s += `<text x="40" y="${staffBot - lineSp * 0.5 + 28}" font-size="55" font-family="serif" fill="#1a1410" text-anchor="middle">𝄞</text>`;
+            s += renderGlyph('treble', 40, staffBot - lineSp, lineSp);
             // 4 chords on C
             const chords = [
               {x: 120, steps: [-2, 0, 2], label: 'Do M'},          // C E G
@@ -2277,6 +2490,7 @@ buildLessonsList();
 buildPiano();
 buildScale();
 calcInterval();
+rotateQuote();
 
 </script>
 </body>
